@@ -12,4 +12,11 @@ class Picture extends Model
         'eventdate' => 'datetime',
 
     ];
+
+
+    public function getEventdateAttribute($value) {
+
+    	return \Carbon\Carbon::parse($value)->format('d-MY - G:i ');
+
+	}
 }
