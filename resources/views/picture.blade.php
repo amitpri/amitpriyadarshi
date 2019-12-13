@@ -119,8 +119,7 @@
                                 <h1 class="text-color-light font-weight-extra-bold text-12 line-height-2 mb-4">{{ $picturedetails->name }}</h1>
                                 <h4 class="font-weight-bold text-center">{{ $picturedetails->details }}</h4>
 
-                                <span class="sub-title  font-weight-bold text-grey mb-2">{{ $picturedetails->eventdate }}</span>
-                                   
+                                      
                             </div>
  
                         </div>
