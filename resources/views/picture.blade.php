@@ -119,13 +119,13 @@
 
             <div role="main" class="main">
 
-                <section class="page-header page-header-modern bg-secondary  bg-color-hover-tertiary page-header-sm">
+                <section class="page-header page-header-modern bg-tertiary   page-header-sm">
                     <div class="container">
                         <div class="row">
 
                             <div class="col-md-12 align-self-center p-static order-1 text-center">
 
-                                <h1 class="text-color-light font-weight-extra-bold text-12 line-height-2 mb-4"  >{{ $picturedetails->name }}</h1>
+                                <h1 class="text-color-light font-weight-extra-bold text-12 line-height-2 mb-4">{{ $picturedetails->name }}</h1>
 
                                 <span class="sub-title  font-weight-bold text-grey mb-2">{{ $picturedetails->eventdate }}</span>
                                    
