@@ -189,12 +189,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="card">
-                                      <div class="card-body">  
-
-                                        <a href="/c/{{ $url }}/{{ $makeup_detail->makeupkey }}" class="btn btn-primary btn-modern">Contact</a>
-                                      </div>
-                                    </div> 
+                                   
                               
                                 </article>
                             
