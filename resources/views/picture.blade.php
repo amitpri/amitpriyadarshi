@@ -8,8 +8,8 @@
 
         <title></title> 
 
-        <meta name="keywords" content="{{ $makeup_detail->shop }}" />
-        <meta name="description" content="{{ $makeup_detail->shop }}"> 
+        <meta name="keywords" content=" " />
+        <meta name="description" content=" "> 
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
@@ -139,7 +139,7 @@
                 <div class="container py-4">
 
                     <blockquote class="blockquote">
-                        <h4 class="font-weight-bold text-center">{{ $makeup_detail->details }}</h4>
+                        <h4 class="font-weight-bold text-center">{{ $picturedetails->details }}</h4>
                     </blockquote>
 
                 </div>
