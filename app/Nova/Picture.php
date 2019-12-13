@@ -6,7 +6,7 @@ use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;  
 use Laravel\Nova\Fields\DateTime;
 use Ctessier\NovaAdvancedImageField\AdvancedImage;
-use Laravel\Nova\Fields\Trix;
+use Laravel\Nova\Fields\Textarea;
 use ClassicO\NovaMediaLibrary\MediaField;
 use OwenMelbz\RadioField\RadioButton;
 use Illuminate\Http\Request;
@@ -56,7 +56,7 @@ class Picture extends Resource
 
             Text::make('Name'),  
 
-            Trix::make('Details')->alwaysShow(),
+            Textarea::make('Details')->alwaysShow(),
  
             DateTime::make('Event' ,'eventdate'),
 
