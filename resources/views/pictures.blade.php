@@ -135,6 +135,7 @@
                                                 </span>
                                             </a>
                                         </div>
+                                        <p><h4><b>{{ $listing->name }}</b></h4></p>
                                     </div>  
                                 @endforeach
                  
