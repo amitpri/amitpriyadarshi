@@ -116,7 +116,7 @@
                 @foreach($listings as $listing) 
                     <div class="isotope-item">
                         <div class="image-gallery-item">
-                                <a target="_blank" href="/p/{{ $listing->id}}/{{ str_replace(' ','-',$listing->name)}}">
+                                <a target="_blank" href="/pictures/{{ $listing->id}}/{{ str_replace(' ','-',$listing->name)}}">
                                   
                                 <span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
                                     <span class="thumb-info-wrapper">
