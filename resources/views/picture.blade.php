@@ -60,7 +60,7 @@
                                 <div class="header-row pr-4">
                                     <div class="header-logo">
                                         <a href="/">
-                                            <img alt="Porto" width="100" height="48" data-sticky-width="82" data-sticky-height="40" src="/img/logo-default-slim.png">
+                                            <h4>Amit Priyadarshi</h4>
                                         </a>
                                     </div>
                                 </div>
@@ -73,16 +73,7 @@
                                                 <ul class="nav nav-pills" id="mainNav">
                                                     <li class="active"><a  href="/" class="dropdown-item active">Home</a></li>
 
-                                                    <li><a data-hash data-hash-offset="60" href="/listings" class="dropdown-item">Listings</a></li> 
-
-                                                    @if(isset($city))
-                                                        <li><a data-hash data-hash-offset="60" href="/{{ $city }}/categories" class="dropdown-item">Categories</a></li> 
-                                                    @else
-                                                        <li><a data-hash data-hash-offset="60" href="/categories" class="dropdown-item">Categories</a></li> 
-                                                    @endif  
-
-                                                    <li><a data-hash data-hash-offset="60" href="/support" class="dropdown-item">Support</a></li> 
-
+                                                    
                                                     <li>&nbsp;&nbsp;</li> 
 
                                                     <li class="social-icons-twitter"><a href="https://www.instagram.com/myonlyask/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
