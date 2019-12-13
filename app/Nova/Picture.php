@@ -52,11 +52,11 @@ class Picture extends Resource
                         ->options([ 
                             '1' => 'Published',
                             '-1' => 'Not Published', 
-                        ])->default('0')->sortable(),
+                        ])->default('1')->sortable(),
 
             Text::make('Name'),  
 
-            Trix::make('Details')->alwaysShow()->stacked(),
+            Trix::make('Details')->alwaysShow(),
  
             DateTime::make('Event' ,'eventdate'),
 
