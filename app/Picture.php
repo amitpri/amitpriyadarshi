@@ -9,6 +9,7 @@ class Picture extends Model
     protected $casts = [
 
         'image' => 'array',
+        'eventdate' => 'datetime',
 
     ];
 }
