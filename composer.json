@@ -14,7 +14,7 @@
         "laravel/nova": "*",
         "laravel/tinker": "^1.0",
         "classic-o/nova-media-library": "^0.5.3",
-        "php-junior/nova-logs": "^1.0",
+        "php-junior/nova-logs": "^1.0"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
