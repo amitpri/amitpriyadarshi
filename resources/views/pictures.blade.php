@@ -2,80 +2,87 @@
 <html>
     <head>
  
+        <!-- Basic -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">   
- 
-       <title></title>       
-       <meta name="keywords" content="" />
-       <meta name="description" content="">                                   
- 
- 
-         
-        <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
-        <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+
+        <title></title> 
+
+        <meta name="keywords" content=" " />
+        <meta name="description" content=" "> 
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 
         <!-- Mobile Metas -->
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
 
         <!-- Web Fonts  -->
-        <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,600,700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
 
         <!-- Vendor CSS -->
         <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="/vendor/fontawesome-free/css/all.min.css">
-        <link rel="stylesheet" href="/vendor/animate/animate.min.css"> 
- 
+        <link rel="stylesheet" href="/vendor/animate/animate.min.css">
+        <link rel="stylesheet" href="/vendor/simple-line-icons/css/simple-line-icons.min.css">
+        <link rel="stylesheet" href="/vendor/owl.carousel/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="/vendor/owl.carousel/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" href="/vendor/magnific-popup/magnific-popup.min.css">
+
         <!-- Theme CSS -->
         <link rel="stylesheet" href="/css/theme.css">
-        <link rel="stylesheet" href="/css/theme-elements.css"> 
- 
+        <link rel="stylesheet" href="/css/theme-elements.css">
+        <link rel="stylesheet" href="/css/theme-blog.css">
+        <link rel="stylesheet" href="/css/theme-shop.css">
+        
         <!-- Demo CSS -->
-        <link rel="stylesheet" href="/css/demos/demo-sass.css">
+
 
         <!-- Skin CSS -->
-        <link rel="stylesheet" href="/css/skins/skin-sass.css"> 
+        <link rel="stylesheet" href="/css/skins/default.css"> 
 
         <!-- Theme Custom CSS -->
         <link rel="stylesheet" href="/css/custom.css">
 
         <!-- Head Libs -->
         <script src="/vendor/modernizr/modernizr.min.js"></script>
-
     
 
     </head>
     <body data-spy="scroll" data-target=".header-nav-main nav" data-offset="80">
 
         <div class="body">
-            <header id="header" class="header-transparent header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': false, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
-                <div class="header-body border-top-0 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="200">
+            <header id="header" class="header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
+                <div class="header-body border-top-0">
                     <div class="header-container container-fluid px-lg-4">
-                        <div class="header-row px-lg-3">
-                            <div class="header-column">
-                                <div class="header-row">
-                                    <div class="header-logo header-logo-sticky-change" style="width: 82px; height: 40px;">
+                        <div class="header-row">
+                            <div class="header-column header-column-border-right flex-grow-0">
+                                <div class="header-row pr-4">
+                                    <div class="header-logo">
                                         <a href="/">
-                                            <img class="header-logo-non-sticky opacity-0" alt="MyOnlyAsk" width="82" height="40" src="/img/logo-default-slim.png">
-                                            <img class="header-logo-sticky opacity-0" alt="MyOnlyAsk" width="82" height="40" src="/img/logo-default-slim.png">
+                                            <img alt="Porto" width="100" height="48" data-sticky-width="82" data-sticky-height="40" src="/img/logo-default-slim.png">
                                         </a>
                                     </div>
                                 </div>
-                            </div> 
-                            <div class="header-column justify-content-center">
+                            </div>
+                            <div class="header-column">
                                 <div class="header-row">
-                                    <div class="header-nav header-nav-line header-nav-bottom-line header-nav-light-text justify-content-center">
-                                        <div class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-effect-2 header-nav-main-sub-effect-1">
-                                            <nav class="collapse">
+                                    <div class="header-nav header-nav-links justify-content-center">
+                                        <div class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
+                                            <nav class="collapse header-mobile-border-top">
                                                 <ul class="nav nav-pills" id="mainNav">
-                                                    <li><a  href="/" class="dropdown-item ">Home</a></li>
+                                                    <li class="active"><a  href="/" class="dropdown-item active">Home</a></li>
 
                                                     <li><a data-hash data-hash-offset="60" href="/listings" class="dropdown-item">Listings</a></li> 
-                                                     
-                                         
-                                                        <li class="active"><a data-hash data-hash-offset="60" href="/categories" class="dropdown-item active">Categories</a></li> 
- 
 
-                                                    <li><a data-hash data-hash-offset="60" href="/support" class="dropdown-item">Support</a></li>
+                                                    @if(isset($city))
+                                                        <li><a data-hash data-hash-offset="60" href="/{{ $city }}/categories" class="dropdown-item">Categories</a></li> 
+                                                    @else
+                                                        <li><a data-hash data-hash-offset="60" href="/categories" class="dropdown-item">Categories</a></li> 
+                                                    @endif  
+
+                                                    <li><a data-hash data-hash-offset="60" href="/support" class="dropdown-item">Support</a></li> 
 
                                                     <li>&nbsp;&nbsp;</li> 
 
@@ -88,8 +95,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="header-column">
-                                <div class="header-row justify-content-end">
+                            <div class="header-column header-column-border-left flex-grow-0 justify-content-center">
+                                <div class="header-row pl-4 justify-content-end">
                                     <ul class="" style="list-style: none;">
 
                                         @if (Route::has('login'))
@@ -103,38 +110,57 @@
                                      <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
                                         <i class="fas fa-bars"></i>
                                     </button>
-                                     </ul>
+                                     </ul> 
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </header>
+
+            <div role="main" class="main">
+
+                <div class="container py-4">
+ 
+
+                    <div class="row">
+                        <div class="col">
+                             <div class="image-gallery sort-destination full-width">
+                                @foreach($listings as $listing) 
+                                    <div class="isotope-item">
+                                        <div class="image-gallery-item">
+                                                <a target="_blank" href="/pictures/{{ $listing->id}}/{{ str_replace(' ','-',$listing->name)}}">
+                                                  
+                                                <span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
+                                                    <span class="thumb-info-wrapper">
+                                                        <img class="img-fluid" src="/storage/{{ $listing->profile_photo}}" alt="">
+                                                        <span class="thumb-info-title">
+                                                            <span class="thumb-info-inner">{{ $listing->name }}</span> 
+                                                        </span>
+                                                        <span class="thumb-info-action">
+                                                            <span class="thumb-info-action-icon"><i class="fas fa-plus"></i></span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>  
+                                @endforeach
+                 
+                            </div> 
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
  
      
-            <div class="image-gallery sort-destination full-width">
-                @foreach($listings as $listing) 
-                    <div class="isotope-item">
-                        <div class="image-gallery-item">
-                                <a target="_blank" href="/pictures/{{ $listing->id}}/{{ str_replace(' ','-',$listing->name)}}">
-                                  
-                                <span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
-                                    <span class="thumb-info-wrapper">
-                                        <img class="img-fluid" src="/storage/{{ $listing->profile_photo}}" alt="">
-                                        <span class="thumb-info-title">
-                                            <span class="thumb-info-inner">{{ $listing->name }}</span> 
-                                        </span>
-                                        <span class="thumb-info-action">
-                                            <span class="thumb-info-action-icon"><i class="fas fa-plus"></i></span>
-                                        </span>
-                                    </span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>  
-                @endforeach
- 
-            </div> 
+           
  
                 
             <footer id="footer" class="bg-light border-0">
