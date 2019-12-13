@@ -116,15 +116,13 @@
                 @foreach($listings as $listing) 
                     <div class="isotope-item">
                         <div class="image-gallery-item">
-                            @if(isset($listing->shop))  <a target="_blank" href="/p/{{$url_code}}/{{ $listing->key}}/{{ str_replace(' ','-',$listing->shop)}}">
-                                    @else   <a target="_blank" href="/p/{{$url_code}}/{{ $listing->key}}/{{ str_replace(' ','-',$listing->name)}}">
-                                    @endif
+                                <a target="_blank" href="/p/{{ $listing->id}}/{{ str_replace(' ','-',$listing->name)}}">
+                                  
                                 <span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
                                     <span class="thumb-info-wrapper">
                                         <img class="img-fluid" src="/storage/{{ $listing->profile_photo}}" alt="">
                                         <span class="thumb-info-title">
-                                            <span class="thumb-info-inner">{{ $listing->shop }}</span>
-                                            <span class="thumb-info-type">{{ $listing->name  }}</span>
+                                            <span class="thumb-info-inner">{{ $listing->name }}</span> 
                                         </span>
                                         <span class="thumb-info-action">
                                             <span class="thumb-info-action-icon"><i class="fas fa-plus"></i></span>
@@ -186,9 +184,7 @@
 
           gtag('config', 'UA-148147470-1');
         </script>
-
-        <script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
-        <script type="text/javascript">window.Beacon('init', '41fcf350-bcc7-4e3f-99bb-a0bbe5622187')</script>
+ 
  
     </body>
 </html>
