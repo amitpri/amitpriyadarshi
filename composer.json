@@ -14,7 +14,9 @@
         "laravel/nova": "*",
         "laravel/tinker": "^1.0",
         "classic-o/nova-media-library": "^0.5.3",
-        "php-junior/nova-logs": "^1.0"
+        "php-junior/nova-logs": "^1.0", 
+        "owenmelbz/nova-radio-field": "^0.0.5",
+        "ctessier/nova-advanced-image-field": "^0.1.1"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",

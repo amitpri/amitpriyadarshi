@@ -13,9 +13,10 @@ class IndexController extends Controller
     }
 
     public function pictures()
-    {
+    {	
+    	$listings = [];
 
-    	return view('pictures');
+    	return view('pictures', compact('listings'));
     }
 
 

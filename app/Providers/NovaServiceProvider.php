@@ -78,6 +78,8 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
         return [
 
             new \ClassicO\NovaMediaLibrary\NovaMediaLibrary(),
+
+            new \PhpJunior\NovaLogViewer\Tool(), 
             
         ];
     }
