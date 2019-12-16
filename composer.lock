@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ddcbd8021cb2563358b6f0561a112be2",
+    "content-hash": "4ab28d0968d2c3b42a60431ef49ee5c6",
     "packages": [
         {
             "name": "arcanedev/log-viewer",
@@ -1126,6 +1126,47 @@
             ],
             "description": "Highlight PHP code in terminal",
             "time": "2018-09-29T18:48:56+00:00"
+        },
+        {
+            "name": "kirschbaum-development/nova-mail",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kirschbaum-development/nova-mail.git",
+                "reference": "c4d088c9ab54b3233d68e8c6d0948809c93f5355"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kirschbaum-development/nova-mail/zipball/c4d088c9ab54b3233d68e8c6d0948809c93f5355",
+                "reference": "c4d088c9ab54b3233d68e8c6d0948809c93f5355",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "KirschbaumDevelopment\\NovaMail\\NovaMailServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "KirschbaumDevelopment\\NovaMail\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova action for sending mail.",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "time": "2019-08-07T19:09:00+00:00"
         },
         {
             "name": "laravel/framework",

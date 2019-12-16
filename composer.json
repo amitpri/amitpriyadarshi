@@ -9,14 +9,15 @@
     "license": "MIT",
     "require": {
         "php": "^7.1.3",
+        "classic-o/nova-media-library": "^0.5.3",
+        "ctessier/nova-advanced-image-field": "^0.1.1",
         "fideloper/proxy": "^4.0",
+        "kirschbaum-development/nova-mail": "^0.1.0",
         "laravel/framework": "5.8.*",
         "laravel/nova": "*",
         "laravel/tinker": "^1.0",
-        "classic-o/nova-media-library": "^0.5.3",
-        "php-junior/nova-logs": "^1.0", 
         "owenmelbz/nova-radio-field": "^0.0.5",
-        "ctessier/nova-advanced-image-field": "^0.1.1"
+        "php-junior/nova-logs": "^1.0"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",

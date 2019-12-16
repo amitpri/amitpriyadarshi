@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Gravatar;
 use Laravel\Nova\Fields\Password;
+use KirschbaumDevelopment\NovaMail\Actions\SendMail;
 
 class User extends Resource
 {
@@ -104,6 +105,10 @@ class User extends Resource
      */
     public function actions(Request $request)
     {
-        return [];
+        return [
+
+            new SendMail,
+
+        ];
     }
 }
