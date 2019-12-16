@@ -22,7 +22,7 @@ class Lead extends Resource
  
     public static $search = [
 
-        'name', 'name', 'city'
+        'name', 'email', 'source'
     ]; 
  
     public function fields(Request $request)
