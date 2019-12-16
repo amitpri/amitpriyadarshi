@@ -1,7 +1,7 @@
 @component('mail::layout')
     {{-- Header --}}
     @slot('header')
-        @component('mail::header', ['url' => config('app.url')])
+        @component('mail::header', ['url' => 'https://meetplease.com'])
         
             <img style="width: 125px; height: 100px;" src="https://meetplease.com/images/logo_black2.png">
         @endcomponent
