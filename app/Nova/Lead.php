@@ -86,26 +86,15 @@ class Lead extends Resource
      */
     public function actions(Request $request)
     {
-        $loggedinrole = Auth::user()->role;
+         
+        return [
 
-        if( $loggedinrole == "super"){
+            new DownloadExcel,
+            new SendMail,
 
-            return [
+        ];
 
-                new DownloadExcel,
-                new SendMail,
-
-            ];
-
-        }else{
-
-            return [
-
-              
-
-            ];
-
-        }
+       
 
     }
 }
