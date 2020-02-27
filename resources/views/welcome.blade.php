@@ -62,6 +62,11 @@
                 margin-bottom: 30px;
             }
         </style>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -85,17 +90,21 @@
                 </div>
 
                 <div class="links">
-                    <a href="/profile">Profile
-                        </a>
-                        <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
-sagittis lacus vel augue laoreet rutrum faucibus.">
-  Popover on bottom
-</button>
-                    <a href="/pictures">Pictures</a>
-                    <a href="/videos">Videos</a>
+                    <a class="dropdown-toggle" href="/profile" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Profile</a>
+                       
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" target="_blank" href="https://www.facebook.com/amitpri">Facebook</a>
+                        <a class="dropdown-item" target="_blank" href="https://www.linkedin.com/in/amit-priyadarshi-7602245/">Linkedin</a>
+                        <a class="dropdown-item" target="_blank" href="https://www.instagram.com/amit.p.r/">Instagram</a>
+                      </div>
+                   
                     <a href="/mywork">My Work</a>
+                    <a href="/videos">Blogs</a>
+                    <a href="/pictures">Pictures</a>
                     <a href="/contact">Contact me</a> 
                 </div>
+                
+
             </div>
         </div>
     </body>
