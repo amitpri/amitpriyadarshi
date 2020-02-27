@@ -99,7 +99,7 @@
                       </div>
                    
                     <a href="/mywork">My Work</a>
-                    <a href="/videos">Blogs</a>
+                    <a href="/blogs">Blogs</a>
                     <a href="/pictures">Pictures</a>
                     <a href="/contact">Contact me</a> 
                 </div>

@@ -26,6 +26,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/profile', 'IndexController@profile');
 Route::get('/pictures', 'IndexController@pictures');
 Route::get('/pictures/{id}/{name}', 'IndexController@picture');
-Route::get('/videos', 'IndexController@videos');
+Route::get('/blogs', 'IndexController@blogs');
 Route::get('/mywork', 'IndexController@mywork');
 Route::get('/contact', 'IndexController@contact');

@@ -38,10 +38,10 @@ class IndexController extends Controller
     }
 
 
-    public function videos()
+    public function blogs()
     {
 
-    	return view('videos');
+    	return view('blogs');
     }
 
 
