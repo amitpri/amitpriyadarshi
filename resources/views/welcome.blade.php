@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Amit Priyadarshi Pages</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -85,7 +85,12 @@
                 </div>
 
                 <div class="links">
-                    <a href="/profile">Profile</a>
+                    <a href="/profile">Profile
+                        </a>
+                        <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus.">
+  Popover on bottom
+</button>
                     <a href="/pictures">Pictures</a>
                     <a href="/videos">Videos</a>
                     <a href="/mywork">My Work</a>
