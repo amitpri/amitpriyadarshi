@@ -10,14 +10,14 @@ use Laravel\Nova\Fields\Trix;
 use Illuminate\Http\Request;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
-class Notes extends Resource
+class Note extends Resource
 {
     /**
      * The model the resource corresponds to.
      *
      * @var string
      */
-    public static $model = 'App\Notes';
+    public static $model = 'App\Note';
 
     /**
      * The single value that should be used to represent the resource when being displayed.
