@@ -45,10 +45,11 @@ class Note extends Resource
     {
         return [
             ID::make()->sortable(),
-            Text::make('category')->sortable(),
-            Text::make('subcategory')->sortable(),
-            Trix::make('reference'),
-            Trix::make('notes'), 
+            Text::make('Category')->sortable(),
+            Text::make('Subcategory')->sortable(),
+            Text::make('Title')->sortable(),
+            Trix::make('Reference'),
+            Trix::make('Notes'), 
             Trix::make('concepts'),
 
         ];
