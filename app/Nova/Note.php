@@ -29,7 +29,7 @@ class Note extends Resource
      * @var array
      */
     public static $search = [
-        'id',
+        'id', 'category', 'subcategory', 'title', 'reference', 'notes', 'concepts'
     ];
 
     /**
