@@ -49,7 +49,7 @@ class Note extends Resource
             Text::make('Subcategory')->sortable(),
             Text::make('Title')->sortable(),
             Text::make('Reference')->hideFromIndex(),
-            Trix::make('Notes')->alwaysShow(),
+            Trix::make('Notes')->alwaysShow()->stacked(),
             Textarea::make('concepts')->rows(5)->alwaysShow(),
 
         ];
