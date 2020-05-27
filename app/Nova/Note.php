@@ -12,11 +12,8 @@ use Laravel\Nova\Http\Requests\NovaRequest;
 
 class Note extends Resource
 {
-    /**
-     * The model the resource corresponds to.
-     *
-     * @var string
-     */
+    public static $group = '0.Learning';
+
     public static $model = 'App\Note';
 
     /**
