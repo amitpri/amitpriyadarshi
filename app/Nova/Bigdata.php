@@ -15,11 +15,12 @@ class Bigdata extends Resource
     public static $group = '0.Learning';
     public static $model = 'App\Bigdata';
 
-    /**
-     * The single value that should be used to represent the resource when being displayed.
-     *
-     * @var string
-     */
+    public static function label() {
+
+        return 'Big Data';
+
+    }
+
     public static $title = 'id';
 
     /**
