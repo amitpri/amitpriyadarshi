@@ -43,7 +43,13 @@ class MBA extends Resource
     {
         return [
             ID::make()->sortable(),
-            Text::make('Category')->sortable(), 
+            Select::make('Category', 'category')->options([
+                        'Financial Accounting' => 'Financial Accounting',
+                        'Economic Env of Business' => 'Economic Env of Business',
+                        'Marketing' => 'Marketing',
+                        'Communication' => 'Communication',
+                        'General Mgt' => 'General Mgt',
+                    ])->sortable(),
             Text::make('Title')->sortable(),
             Text::make('Reference')->hideFromIndex(),
             Trix::make('Notes')->alwaysShow()->stacked(),
