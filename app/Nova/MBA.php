@@ -14,14 +14,14 @@ use Laravel\Nova\Http\Requests\NovaRequest;
 class MBA extends Resource
 {
     public static $group = '0.Learning';
-    
+
     public static $model = 'App\MBA';
 
-    /**
-     * The single value that should be used to represent the resource when being displayed.
-     *
-     * @var string
-     */
+    public static function label() {
+
+        return 'MBA';
+
+    }
     public static $title = 'id';
 
     /**
