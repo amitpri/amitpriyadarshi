@@ -12,7 +12,7 @@ use Laravel\Nova\Http\Requests\NovaRequest;
 
 class Bigdata extends Resource
 {
-    public static $group = '0.Learning';
+    public static $group = '1.Training';
     public static $model = 'App\Bigdata';
 
     public static function label() {

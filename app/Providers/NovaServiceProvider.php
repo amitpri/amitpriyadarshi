@@ -7,13 +7,35 @@ use Laravel\Nova\Cards\Help;
 use Illuminate\Support\Facades\Gate;
 use Laravel\Nova\NovaApplicationServiceProvider;
 
+use App\Nova\Plan;
+use App\Nova\Execution;
+use App\Nova\Note;
+use App\Nova\MBA;
+use App\Nova\Cloud;
+use App\Nova\Bigdata;
+use App\Nova\Picture;
+use App\Nova\Lead; 
+use App\Nova\User;
+
 class NovaServiceProvider extends NovaApplicationServiceProvider
 {
-    /**
-     * Bootstrap any application services.
-     *
-     * @return void
-     */
+    protected function resources()
+      {  
+ 
+        Nova::resources([
+
+            Plan::class,
+            Execution::class,
+            Note::class,
+            MBA::class,
+            Cloud::class,
+            Bigdata::class, 
+            Lead::class,   
+            Picture::class,
+            User::class,        
+        ]);
+
+    }
     public function boot()
     {
         parent::boot();

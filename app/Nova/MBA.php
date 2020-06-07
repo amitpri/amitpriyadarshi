@@ -13,7 +13,7 @@ use Laravel\Nova\Http\Requests\NovaRequest;
 
 class MBA extends Resource
 {
-    public static $group = '0.Learning';
+    public static $group = '1.Training';
 
     public static $model = 'App\MBA';
 

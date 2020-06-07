@@ -3,17 +3,30 @@
 namespace App\Nova;
 
 use Laravel\Nova\Fields\ID;
+use Illuminate\Http\Request; 
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Textarea;
-use Laravel\Nova\Fields\Trix;
-
-use Illuminate\Http\Request;
+use Laravel\Nova\Fields\DateTime; 
+use Laravel\Nova\Fields\Hidden; 
 use Laravel\Nova\Http\Requests\NovaRequest;
 
-class Cloud extends Resource
+class Execution extends Resource
 {
-    public static $group = '1.Training';
-    public static $model = 'App\Cloud';
+    /**
+     * The model the resource corresponds to.
+     *
+     * @var string
+     */
+    public static $group = '0.Plan';
+
+    public static function label() {
+
+        return '2.Execution';
+
+    }
+
+
+    public static $model = 'App\Execution';
 
     /**
      * The single value that should be used to represent the resource when being displayed.
@@ -28,7 +41,7 @@ class Cloud extends Resource
      * @var array
      */
     public static $search = [
-        'id', 'category', 'title', 'reference', 'notes', 'concepts'
+        'id',
     ];
 
     /**
@@ -41,11 +54,11 @@ class Cloud extends Resource
     {
         return [
             ID::make()->sortable(),
-            Text::make('Category')->sortable(), 
-            Text::make('Title')->sortable(),
-            Text::make('Reference')->hideFromIndex(),
-            Trix::make('Notes')->alwaysShow()->stacked(),
-            Textarea::make('concepts')->rows(5)->alwaysShow(),
+            Text::make('Schedule')->sortable(),
+            DateTime::make('Study Date', 'studydates')->format('DD MMM YYYY')->sortable(),
+            Text::make('Subject', 'subject')->sortable(),
+            Text::make('reference', 'reference')->sortable(),
+            Textarea::make('Notes','notes')->rows(3)->alwaysShow(), 
         ];
     }
 
