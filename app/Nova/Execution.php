@@ -81,7 +81,10 @@ class Execution extends Resource
      */
     public function filters(Request $request)
     {
-        return [];
+        return [
+            new Filters\Subject,
+            new Filters\Schedule,
+        ];
     }
 
     /**
