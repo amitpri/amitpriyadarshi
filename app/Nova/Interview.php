@@ -6,6 +6,7 @@ use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request; 
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Textarea; 
+use Laravel\Nova\Fields\Trix;
 use Laravel\Nova\Fields\File;
 use Laravel\Nova\Fields\Hidden; 
 use Laravel\Nova\Http\Requests\NovaRequest;
@@ -35,7 +36,7 @@ class Interview extends Resource
      * @var array
      */
     public static $search = [
-        'id',
+        'id', 'topic' , 'subtopic' , 'notes'
     ];
 
     /**
@@ -51,9 +52,9 @@ class Interview extends Resource
 
             Text::make('Topic')->sortable()->rules('required', 'max:255'),
 
-            Text::make('Subtopic')->sortable()->rules('required', 'max:255'),
+            Text::make('Subtopic')->sortable()->rules('required', 'max:255'), 
 
-            Textarea::make('Notes','notes')->rows(10)->alwaysShow(),
+            Trix::make('Notes')->alwaysShow()->stacked(),
  
             File::make('Document 1','document1')->disk('public'),
 
