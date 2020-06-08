@@ -58,9 +58,9 @@ class Interview extends Resource
  
             File::make('Document 1','document1')->disk('public'),
 
-            File::make('Document 2','document1')->disk('public'),
+            File::make('Document 2','document2')->disk('public'),
 
-            File::make('Document 3','document1')->disk('public'),
+            File::make('Document 3','document3')->disk('public'),
             
             
         ];
