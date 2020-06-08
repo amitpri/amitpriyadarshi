@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7b41a71d83aa5c2bf7e8c122fe4b7a31",
+    "content-hash": "45713c08f6996d1f1cbaf94fa91a03e6",
     "packages": [
         {
             "name": "arcanedev/log-viewer",
@@ -1178,6 +1178,48 @@
             "description": "Highlight PHP code in terminal",
             "abandoned": "php-parallel-lint/php-console-highlighter",
             "time": "2018-09-29T18:48:56+00:00"
+        },
+        {
+            "name": "khalin/nova-link-field",
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/oleghalin/nova-link-field.git",
+                "reference": "c6de55e7a8c81487b2512d9210b2765fd7b584a3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oleghalin/nova-link-field/zipball/c6de55e7a8c81487b2512d9210b2765fd7b584a3",
+                "reference": "c6de55e7a8c81487b2512d9210b2765fd7b584a3",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/nova": ">=2.1",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Khalin\\Nova\\Field\\FieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Khalin\\Nova\\Field\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova Link field.",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "time": "2020-05-17T10:33:56+00:00"
         },
         {
             "name": "kirschbaum-development/nova-mail",

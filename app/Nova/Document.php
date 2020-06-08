@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Text; 
 use Laravel\Nova\Fields\Trix; 
 use Laravel\Nova\Fields\File;
+use Khalin\Nova\Field\Link;
+
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class Document extends Resource
@@ -48,6 +50,10 @@ class Document extends Resource
             Text::make('Name')->sortable()->rules('required', 'max:255'),
  
             File::make('Document','document')->disk('public'), 
+
+            Link::make('Download Document','document')->url(function () {
+                    return "https://amitpriyadarshi.com/storage/{$this->document}";
+                })->text("Download")->icon()->blank()->hideWhenUpdating()->hideFromDetail(),
 
             Trix::make('Notes')->alwaysShow()->stacked(),
         ];
