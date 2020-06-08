@@ -16,6 +16,7 @@ use App\Nova\Bigdata;
 use App\Nova\Picture;
 use App\Nova\Lead; 
 use App\Nova\User;
+use App\Nova\Interview; 
 
 class NovaServiceProvider extends NovaApplicationServiceProvider
 {
@@ -26,6 +27,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
 
             Plan::class,
             Execution::class,
+            Interview::class,
             Note::class,
             MBA::class,
             Cloud::class,
