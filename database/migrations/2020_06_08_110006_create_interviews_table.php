@@ -18,9 +18,9 @@ class CreateInterviewsTable extends Migration
             $table->string('topic')->nullable(); 
             $table->string('subtopic')->nullable(); 
             $table->string('notes')->nullable();
-            $table->string('document1')->nullable()
-            $table->string('document2')->nullable()
-            $table->string('document3')->nullable()
+            $table->string('document1')->nullable();
+            $table->string('document2')->nullable();
+            $table->string('document3')->nullable();
             $table->timestamps();
         });
     }
