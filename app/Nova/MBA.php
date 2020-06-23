@@ -7,7 +7,7 @@ use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Fields\Trix;
 use Laravel\Nova\Fields\Select; 
-
+use Ctessier\NovaAdvancedImageField\AdvancedImage;
 use Illuminate\Http\Request;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
@@ -51,9 +51,14 @@ class MBA extends Resource
                         'General Mgt' => 'General Mgt',
                     ])->sortable(),
             Text::make('Title')->sortable(),
-            Text::make('Reference')->hideFromIndex(),
+            Text::make('Reference'),
             Trix::make('Notes')->alwaysShow()->stacked(),
             Textarea::make('concepts')->rows(5)->alwaysShow(),
+            AdvancedImage::make('Image1')->croppable()->hideFromIndex(),
+            AdvancedImage::make('Image2')->croppable()->hideFromIndex(),
+            AdvancedImage::make('Image3')->croppable()->hideFromIndex(),
+            AdvancedImage::make('Image4')->croppable()->hideFromIndex(),
+            AdvancedImage::make('Image5')->croppable()->hideFromIndex(),
         ];
     }
 
