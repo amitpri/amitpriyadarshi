@@ -13,6 +13,7 @@ use App\Nova\Note;
 use App\Nova\MBA;
 use App\Nova\Cloud;
 use App\Nova\Bigdata;
+use App\Nova\Java;
 use App\Nova\Picture;
 use App\Nova\Lead; 
 use App\Nova\User;
@@ -34,6 +35,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
             MBA::class,
             Cloud::class,
             Bigdata::class, 
+            Java::class, 
             Lead::class,   
             Picture::class,
             User::class,        
