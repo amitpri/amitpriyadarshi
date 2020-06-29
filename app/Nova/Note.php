@@ -45,7 +45,7 @@ class Note extends Resource
             Text::make('Category')->sortable(),
             Text::make('Subcategory')->sortable(),
             Text::make('Title')->sortable(),
-            Text::make('Reference'),
+            Text::make('Reference')->hideFromIndex(),
             Trix::make('Notes')->alwaysShow()->stacked(),
             Textarea::make('concepts')->rows(5)->alwaysShow(),
             AdvancedImage::make('Image1')->croppable()->hideFromIndex(),
