@@ -16,10 +16,7 @@ class CloudXLab extends Resource
         return 'CloudX Lab';
 
     }
-
-
-    public static $model = 'App\CloudXLab';
-
+ 
     /**
      * The single value that should be used to represent the resource when being displayed.
      *
