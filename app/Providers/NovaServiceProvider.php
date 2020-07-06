@@ -11,6 +11,7 @@ use App\Nova\Plan;
 use App\Nova\Execution;
 use App\Nova\Note;
 use App\Nova\MBA;
+use App\Nova\CloudXLab;
 use App\Nova\Cloud;
 use App\Nova\Bigdata;
 use App\Nova\Java;
@@ -33,6 +34,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
             Document::class,
             Note::class,
             MBA::class,
+            CloudXLab::class,
             Cloud::class,
             Bigdata::class, 
             Java::class, 
