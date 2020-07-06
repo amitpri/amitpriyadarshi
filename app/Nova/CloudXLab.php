@@ -3,9 +3,14 @@
 namespace App\Nova;
 
 use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\Textarea;
+use Laravel\Nova\Fields\Trix;
+
+use Ctessier\NovaAdvancedImageField\AdvancedImage;
+
 use Illuminate\Http\Request;
 use Laravel\Nova\Http\Requests\NovaRequest;
-
 class CloudXLab extends Resource
 {
     public static $group = '1.Training';
