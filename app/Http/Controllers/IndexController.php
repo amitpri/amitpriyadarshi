@@ -15,6 +15,14 @@ class IndexController extends Controller
     	return view('profile');
     }
 
+    public function download()
+    {
+
+        $file= public_path(). "/jce_policy-8.zip";
+
+        return response()->download($file, 'jce_policy-8.pdf' );
+    }
+
     public function pictures()
     {	
     	$listings = DB::select("SELECT  a.`id` ,a.`name`,a.`details`  , a.`image`, a.`profile_photo`, a.`eventdate`

@@ -29,3 +29,5 @@ Route::get('/pictures/{id}/{name}', 'IndexController@picture');
 Route::get('/blogs', 'IndexController@blogs');
 Route::get('/mywork', 'IndexController@mywork');
 Route::get('/contact', 'IndexController@contact');
+
+Route::get('/download/jce_policy-8', 'IndexController@download');
