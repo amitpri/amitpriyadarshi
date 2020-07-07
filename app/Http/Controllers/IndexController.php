@@ -20,7 +20,7 @@ class IndexController extends Controller
 
         $file= public_path(). "/jce_policy-8.zip";
 
-        return response()->download($file, 'jce_policy-8.pdf' );
+        return response()->download($file, 'jce_policy-8.zip' );
     }
 
     public function pictures()
