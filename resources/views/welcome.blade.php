@@ -6,11 +6,10 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">   
 
-        <title>Porto - Responsive HTML5 Template 7.6.0</title>  
+        <title>Amit's Blogs, Professional and Personal experiences</title>  
 
-        <meta name="keywords" content="HTML5 Template" />
-        <meta name="description" content="Porto - Responsive HTML5 Template">
-        <meta name="author" content="okler.net">
+        <meta name="keywords" content="Big Data, Analytics, Cloud Blogs" />
+        <meta name="description" content="Big Data and Analytics blogs"> 
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
