@@ -7,6 +7,8 @@ use Laravel\Nova\Cards\Help;
 use Illuminate\Support\Facades\Gate;
 use Laravel\Nova\NovaApplicationServiceProvider;
 
+use App\Nova\Blog;
+use App\Nova\Category;
 use App\Nova\Plan;
 use App\Nova\Execution;
 use App\Nova\Note;
@@ -28,6 +30,8 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
  
         Nova::resources([
 
+            Blog::class,
+            Category::class,
             Plan::class,
             Execution::class,
             Interview::class,
