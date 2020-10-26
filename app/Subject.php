@@ -11,14 +11,7 @@ class Subject extends Model
 
         return $this->belongsTo('App\Category', 'category_id');
 
-    } 
-
-    public function project()
-    {
-
-    	return $this->belongsToMany('App\Project','subject_projects');
-
-    }
+    }  
 
     public function blog()
     {
