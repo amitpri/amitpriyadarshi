@@ -65,27 +65,27 @@ class Blog extends Resource
             Select::make('Top 1', 'top')->options([
                         '0' => 'No', 
                         '1' => 'Yes',
-            ])->displayUsingLabels(), 
+            ])->displayUsingLabels()->sortable(),  
 
             Select::make('Top 2', 'top2')->options([
                         '0' => 'No', 
                         '1' => 'Yes',
-            ])->displayUsingLabels(), 
+            ])->displayUsingLabels()->sortable(), 
 
             Select::make('Popular', 'popular')->options([
                         '0' => 'No', 
                         '1' => 'Yes',
-            ])->displayUsingLabels(), 
+            ])->displayUsingLabels()->sortable(), 
 
              Select::make('Featured', 'featured')->options([
                         '0' => 'No', 
                         '1' => 'Yes',
-            ])->displayUsingLabels(), 
+            ])->displayUsingLabels()->sortable(), 
 
             Select::make('Approved', 'approved')->options([
                         '0' => 'No', 
                         '1' => 'Yes',
-            ])->displayUsingLabels(),
+            ])->displayUsingLabels()->sortable(), 
 
    //         BelongsToMany::make('Subject'),
 

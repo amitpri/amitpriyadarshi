@@ -21,7 +21,8 @@ class IndexController extends Controller
                                         , a.`category_id` , c.`name` as category_name , a.`top` , a.`top2` , a.`featured` , a.`popular` 
                                        FROM `blogs` a , `users` b,  `categories` c
                                         WHERE  a.`user_id` = b.`id`
-                                        AND a.`category_id` = c.`id` ");
+                                        AND a.`category_id` = c.`id`
+                                        ORDER BY a.`top` DESC LIMIT 4  ");
 
         $blogs_top = $blogs;
 

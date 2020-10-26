@@ -222,7 +222,7 @@
                         </div>
                         <div class="col-lg-5">
 
-                            @foreach($blogs as $blog)
+                            @foreach($blogs_top as $blog_top)
 
                                 <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
                                     <div class="row align-items-center pb-1">
