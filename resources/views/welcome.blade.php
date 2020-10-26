@@ -76,23 +76,23 @@
                                     <div class="header-row">
                                         <nav class="header-nav-top">
                                             <ul class="nav nav-pills">
-                                                <li class="nav-item nav-item-left-border nav-item-left-border-remove nav-item-left-border-sm-show">
+                                                <li class="nav-item nav-item-anim-icon d-none d-md-block">
                                                     <a class="nav-link pl-0" href="/about"><i class="fas fa-angle-right"></i> About Amit</a>
                                                 </li>
-                                                <li class="nav-item nav-item-left-border nav-item-left-border-remove nav-item-left-border-sm-show">
+                                                <li class="nav-item nav-item-anim-icon d-none d-md-block">
                                                     <a class="nav-link" href="/contact"><i class="fas fa-angle-right"></i> Contact Amit</a>
                                                 </li>
 
                                                 </li>
-                                                <li class="nav-item nav-item-left-border nav-item-left-border-remove nav-item-left-border-sm-show">
+                                                <li class="nav-item nav-item-anim-icon d-none d-md-block">
                                                     <a class="nav-link" href="/consulting"><i class="fas fa-angle-right"></i> Consulting</a>
                                                 </li>
 
-                                                <li class="nav-item nav-item-left-border nav-item-left-border-remove nav-item-left-border-sm-show">
+                                                <li class="nav-item nav-item-anim-icon d-none d-md-block">
                                                     <a class="nav-link" href="/services"><i class="fas fa-angle-right"></i> Services</a>
                                                 </li>
 
-                                                <li class="nav-item nav-item-left-border nav-item-left-border-remove nav-item-left-border-sm-show">
+                                                <li class="nav-item nav-item-anim-icon d-none d-md-block">
                                                     <a class="nav-link" href="/training"><i class="fas fa-angle-right"></i> Training</a>
                                                 </li>
                                              
@@ -150,7 +150,7 @@
                                                                 @foreach($categories as $category)
 
                                                                     <li class="dropdown dropdown-full-color dropdown-light dropdown-mega">
-                                                                        <a class="dropdown-item dropdown-toggle" href="/c/{{$category->id}}/{{$category->name}}">
+                                                                        <a class="dropdown-item dropdown-toggle" href="/{{$category->id}}/{{$category->name}}">
                                                                             {{ $category->name }}
                                                                         </a> 
                                                                     </li>
@@ -276,29 +276,32 @@
                                 </div>
                                 <div class="col-lg-6">
 
+
                                     @foreach($bigdata_blogs as $bigdata_blog)
 
-                                        <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
-                                            <div class="row align-items-center pb-1">
-                                                <div class="col-sm-4">
-                                                    <a href="blog-post.html">
-                                                        <img src="img/blog/default/blog-47.jpg" class="img-fluid border-radius-0" alt="Gadgets That Make Your Smartphone Even Smarter">
-                                                    </a>
-                                                </div>
-                                                <div class="col-sm-8 pl-sm-0">
-                                                    <div class="thumb-info-caption-text">
-                                                        <div class="d-inline-block text-default text-1 float-none">
-                                                            <a href="/c/{{ $bigdata_blog->category_id}}" class="text-decoration-none text-color-default">{{ $bigdata_blog->category_name}}</a>
-                                                        </div>
-                                                        <h4 class="d-block pb-2 line-height-2 text-3 text-dark font-weight-bold mb-0">
-                                                            <a href="/show?id={{ $bigdata_blog->id}}&name={{ $bigdata_blog->name}}" class="text-decoration-none text-color-dark">{{ $bigdata_blog->name}}</a>
-                                                        </h4>
+                                    <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                        <div class="row align-items-center pb-1">
+                                            <div class="col-sm-4">
+                                                <a href="blog-post.html">
+                                                    <img src="img/blog/default/blog-47.jpg" class="img-fluid border-radius-0" alt="Gadgets That Make Your Smartphone Even Smarter">
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-8 pl-sm-0">
+                                                <div class="thumb-info-caption-text">
+                                                    <div class="d-inline-block text-default text-1 float-none">
+                                                        <a href="blog-post.html" class="text-decoration-none text-color-default">January 12, 2019</a>
                                                     </div>
+                                                    <h4 class="d-block pb-2 line-height-2 text-3 text-dark font-weight-bold mb-0">
+                                                        <a href="blog-post.html" class="text-decoration-none text-color-dark">Gadgets That Make Your Smartphone Even Smarter</a>
+                                                    </h4>
                                                 </div>
                                             </div>
-                                        </article> 
+                                        </div>
+                                    </article>
 
-                                    @endforeach
+                                     @endforeach
+
+                                 
                                 </div>
                             </div>
 
@@ -330,11 +333,10 @@
                                             </div>
                                         </div>
                                     </article>
-                                </div> 
+                                </div>
+                                <div class="col-lg-6">
 
-                                    <div class="col-lg-6">
-
-                                            @foreach($cloud_blogs as $cloud_blog)
+                                   @foreach($cloud_blogs as $cloud_blog)
 
                                                 <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
                                                     <div class="row align-items-center pb-1">
@@ -357,11 +359,6 @@
                                                 </article> 
 
                                             @endforeach
-                                        </div>
-                                   
-
-
-                                    
                                 </div>
                             </div>
 
@@ -394,32 +391,33 @@
                                         </div>
                                     </article>
                                 </div>
-                                  <div class="col-lg-6">
+                                <div class="col-lg-6">
 
-                                            @foreach($dwh_blogs as $dwh_blog)
+                                     @foreach($dwh_blogs as $dwh_blog)
 
-                                                <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
-                                                    <div class="row align-items-center pb-1">
-                                                        <div class="col-sm-4">
-                                                            <a href="blog-post.html">
-                                                                <img src="img/blog/default/blog-47.jpg" class="img-fluid border-radius-0" alt="Gadgets That Make Your Smartphone Even Smarter">
-                                                            </a>
+                                        <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                            <div class="row align-items-center pb-1">
+                                                <div class="col-sm-4">
+                                                    <a href="blog-post.html">
+                                                        <img src="img/blog/default/blog-47.jpg" class="img-fluid border-radius-0" alt="Gadgets That Make Your Smartphone Even Smarter">
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-8 pl-sm-0">
+                                                    <div class="thumb-info-caption-text">
+                                                        <div class="d-inline-block text-default text-1 float-none">
+                                                            <a href="/c/{{ $dwh_blog->category_id}}" class="text-decoration-none text-color-default">{{ $dwh_blog->category_name}}</a>
                                                         </div>
-                                                        <div class="col-sm-8 pl-sm-0">
-                                                            <div class="thumb-info-caption-text">
-                                                                <div class="d-inline-block text-default text-1 float-none">
-                                                                    <a href="/c/{{ $dwh_blog->category_id}}" class="text-decoration-none text-color-default">{{ $dwh_blog->category_name}}</a>
-                                                                </div>
-                                                                <h4 class="d-block pb-2 line-height-2 text-3 text-dark font-weight-bold mb-0">
-                                                                    <a href="/show?id={{ $dwh_blog->id}}&name={{ $dwh_blog->name}}" class="text-decoration-none text-color-dark">{{ $dwh_blog->name}}</a>
-                                                                </h4>
-                                                            </div>
-                                                        </div>
+                                                        <h4 class="d-block pb-2 line-height-2 text-3 text-dark font-weight-bold mb-0">
+                                                            <a href="/show?id={{ $dwh_blog->id}}&name={{ $dwh_blog->name}}" class="text-decoration-none text-color-dark">{{ $dwh_blog->name}}</a>
+                                                        </h4>
                                                     </div>
-                                                </article> 
+                                                </div>
+                                            </div>
+                                        </article> 
 
-                                            @endforeach
-                                        </div>
+                                    @endforeach
+ 
+                                </div>
                             </div>
 
                             <div class="text-center py-3 mb-4">
@@ -741,7 +739,32 @@
                                 <h5 class="font-weight-bold pt-4">Find us on Facebook</h5>
                                 <div class="fb-page" data-href="https://www.facebook.com/OklerThemes/" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/OklerThemes/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/OklerThemes/">Okler Themes</a></blockquote></div>
                             </aside>
- 
+
+                            <h5 class="font-weight-bold pt-1">Recent Comments</h5>
+
+                            <ul class="list-unstyled mb-4 pb-1 pt-2">
+
+                                <li class="pb-3 text-2">
+                                    <a href="#" rel="external nofollow" class="font-weight-bold text-dark">John Doe</a> on <a href="blog-post.html" class="text-dark">Main Reasons To Stop Texting And Driving</a>
+                                </li>
+
+                                <li class="pb-3 text-2">
+                                    <a href="#" rel="external nofollow" class="font-weight-bold text-dark">John Doe</a> on <a href="blog-post.html" class="text-dark">Tips to Help You Quickly Prepare your Lunch</a>
+                                </li>
+
+                                <li class="pb-3 text-2">
+                                    <a href="#" rel="external nofollow" class="font-weight-bold text-dark">John Doe</a> on <a href="blog-post.html" class="text-dark">Why should I buy a smartwatch?</a>
+                                </li>
+
+                                <li class="pb-3 text-2">
+                                    <a href="#" rel="external nofollow" class="font-weight-bold text-dark">John Doe</a> on <a href="blog-post.html" class="text-dark">The best augmented reality smartglasses</a>
+                                </li>
+
+                                <li class="pb-3 text-2">
+                                    <a href="#" rel="external nofollow" class="font-weight-bold text-dark">John Doe</a> on <a href="blog-post.html" class="text-dark">12 Healthiest Foods to Eat for Breakfast</a>
+                                </li>
+                            </ul>
+
                         </div>
 
                     </div>
@@ -755,12 +778,60 @@
                         <span>Get in Touch</span>
                     </div>
                     <div class="row py-5 my-4">
-                        <div class="col-md-6 col-lg-10 mb-5 mb-lg-0">
+                        <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
                             <h5 class="text-3 mb-3">ABOUT THE BLOG</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna semper scelerisque.</p>
                             <p class="mb-0">Praesent venenatis turpis vitae purus semper, eget sagittis velit venenatis ptent taciti sociosqu ad litora...</p>
-                            
-                        </div>  
+                            <p class="mb-0"><a href="#" class="btn-flat btn-xs text-color-light p-relative top-5"><strong class="text-2">VIEW MORE</strong><i class="fas fa-angle-right p-relative top-1 pl-2"></i></a></p>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                            <h5 class="text-3 mb-3">RECENT POSTS</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li class="media mb-3 pb-1">
+                                    <article class="d-flex">
+                                        <a href="#">
+                                            <img class="mr-3 rounded-circle" src="img/office/our-office-4-square.jpg" alt="" style="max-width: 70px;">
+                                        </a>
+                                        <div class="media-body">
+                                            <a href="#">
+                                                <h6 class="text-3 text-color-light opacity-8 ls-0 mb-1">Lorem ipsum dolor sit, consectetur adipiscing elit.</h6>
+                                                <p class="text-2 mb-0">12:53 AM Dec 19th</p>
+                                            </a>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="media">
+                                    <article class="d-flex">
+                                        <a href="#">
+                                            <img class="mr-3 rounded-circle" src="img/office/our-office-5-square.jpg" alt="" style="max-width: 70px;">
+                                        </a>
+                                        <div class="media-body">
+                                            <a href="#">
+                                                <h6 class="text-3 text-color-light opacity-8 ls-0 mb-1">Lorem ipsum dolor sit, consectetur adipiscing elit.</h6>
+                                                <p class="text-2 mb-0">12:53 AM Dec 19th</p>
+                                            </a>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-5 mb-md-0">
+                            <h5 class="text-3 mb-3">RECENT COMMENTS</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-3 pb-1">
+                                    <a href="#">
+                                        <p class="text-3 text-color-light opacity-8 mb-1"><i class="fas fa-angle-right text-color-primary"></i><strong class="ml-2">John Doe</strong> commented on <strong class="text-color-primary">lorem ipsum dolor sit amet.</strong></p>
+                                        <p class="text-2 mb-0">12:55 AM Dec 19th</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p class="text-3 text-color-light opacity-8 mb-1"><i class="fas fa-angle-right text-color-primary"></i><strong class="ml-2">John Doe</strong> commented on <strong class="text-color-primary">lorem ipsum dolor sit amet.</strong></p>
+                                        <p class="text-2 mb-0">12:55 AM Dec 19th</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="col-md-6 col-lg-2">
                             <h5 class="text-3 mb-3">CATEGORIES</h5>
                             <p>
