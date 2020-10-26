@@ -54,7 +54,7 @@ class IndexController extends Controller
         
         $blogid = $blogid;
 
-        $blogs = Blog::where('id',$blogid)->get(['id', 'user_id', 'category_id', 'name', 'blog', 'tags', 'image1', 'image2']);
+        $blogs = Blog::where('category_id',$blogid)->get(['id', 'user_id', 'category_id', 'name', 'blog', 'tags', 'image1', 'image2']);
 
         return view('blogs',compact('blogs'));
     }

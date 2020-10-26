@@ -215,7 +215,43 @@
                         <div class="col">
                             <div class="blog-posts single-post">
              
-                            
+                                <div class="col-lg-9">
+                                    <div class="blog-posts">
+
+                                        <div class="row px-3">
+
+                                            @foreach($blogs as $blog)
+
+                                                <div class="col-sm-6">
+                                                    <article class="post post-medium border-0 pb-0 mb-5">
+                                                        <div class="post-image">
+                                                            <a href="#">
+                                                                <img style="max-width:300px;max-height:300px;" src="storage/    " class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" />
+                                                            </a>
+                                                        </div>
+
+                                                        <div class="post-content">
+
+                                                            <h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2"><a href="/show?id={{ $blog->id }}&name=  "  >{{ $blog->name }}</a></h2>
+                                                            <p>{{ $blog->summary }}</p>
+
+                                                            <div class="post-meta">
+                                                                <span><i class="far fa-user"></i> By <a href="/teacher/details?id=">{{ $blog->trainer}}</a> </span>
+                                                                <span><i class="far fa-folder"></i> <a href="projects?cid">{{ $blog->category}}</a> </span> 
+                                                         
+                                                            </div>
+
+                                                        </div>
+                                                    </article>
+                                                </div>
+
+                                             @endforeach   
+
+                                        </div>
+ 
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
