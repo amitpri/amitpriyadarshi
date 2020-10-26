@@ -276,65 +276,29 @@
                                 </div>
                                 <div class="col-lg-6">
 
-                                    <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
-                                        <div class="row align-items-center pb-1">
-                                            <div class="col-sm-4">
-                                                <a href="blog-post.html">
-                                                    <img src="img/blog/default/blog-47.jpg" class="img-fluid border-radius-0" alt="Gadgets That Make Your Smartphone Even Smarter">
-                                                </a>
-                                            </div>
-                                            <div class="col-sm-8 pl-sm-0">
-                                                <div class="thumb-info-caption-text">
-                                                    <div class="d-inline-block text-default text-1 float-none">
-                                                        <a href="blog-post.html" class="text-decoration-none text-color-default">January 12, 2019</a>
-                                                    </div>
-                                                    <h4 class="d-block pb-2 line-height-2 text-3 text-dark font-weight-bold mb-0">
-                                                        <a href="blog-post.html" class="text-decoration-none text-color-dark">Gadgets That Make Your Smartphone Even Smarter</a>
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
+                                    @foreach($dwh_blogs as $dwh_blog)
 
-                                    <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
-                                        <div class="row align-items-center pb-1">
-                                            <div class="col-sm-4">
-                                                <a href="blog-post.html">
-                                                    <img src="img/blog/default/blog-68.jpg" class="img-fluid border-radius-0" alt="The best augmented reality smartglasses">
-                                                </a>
-                                            </div>
-                                            <div class="col-sm-7 pl-sm-0">
-                                                <div class="thumb-info-caption-text">
-                                                    <div class="d-inline-block text-default text-1 float-none">
-                                                        <a href="blog-post.html" class="text-decoration-none text-color-default">January 12, 2019</a>
+                                        <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                            <div class="row align-items-center pb-1">
+                                                <div class="col-sm-4">
+                                                    <a href="blog-post.html">
+                                                        <img src="img/blog/default/blog-47.jpg" class="img-fluid border-radius-0" alt="Gadgets That Make Your Smartphone Even Smarter">
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-8 pl-sm-0">
+                                                    <div class="thumb-info-caption-text">
+                                                        <div class="d-inline-block text-default text-1 float-none">
+                                                            <a href="/c/{{ $dwh_blog->category_id}}" class="text-decoration-none text-color-default">{{ $dwh_blog->category_name}}</a>
+                                                        </div>
+                                                        <h4 class="d-block pb-2 line-height-2 text-3 text-dark font-weight-bold mb-0">
+                                                            <a href="/show?id={{ $dwh_blog->id}}&name={{ $dwh_blog->name}}" class="text-decoration-none text-color-dark">{{ $dwh_blog->name}}</a>
+                                                        </h4>
                                                     </div>
-                                                    <h4 class="d-block pb-2 line-height-2 text-3 text-dark font-weight-bold mb-0">
-                                                        <a href="blog-post.html" class="text-decoration-none text-color-dark">The best augmented reality smartglasses</a>
-                                                    </h4>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </article>
+                                        </article> 
 
-                                    <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
-                                        <div class="row align-items-center pb-1">
-                                            <div class="col-sm-4">
-                                                <a href="blog-post.html">
-                                                    <img src="img/blog/default/blog-67.jpg" class="img-fluid border-radius-0" alt="Why should I buy a smartwatch?">
-                                                </a>
-                                            </div>
-                                            <div class="col-sm-7 pl-sm-0">
-                                                <div class="thumb-info-caption-text">
-                                                    <div class="d-inline-block text-default text-1 float-none">
-                                                        <a href="blog-post.html" class="text-decoration-none text-color-default">January 12, 2019</a>
-                                                    </div>
-                                                    <h4 class="d-block pb-2 line-height-2 text-3 text-dark font-weight-bold mb-0">
-                                                        <a href="blog-post.html" class="text-decoration-none text-color-dark">Why should I buy a smartwatch?</a>
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
+                                    @endforeach
                                 </div>
                             </div>
 
@@ -366,68 +330,38 @@
                                             </div>
                                         </div>
                                     </article>
-                                </div>
-                                <div class="col-lg-6">
+                                </div> 
 
-                                    <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
-                                        <div class="row align-items-center pb-1">
-                                            <div class="col-sm-4">
-                                                <a href="blog-post.html">
-                                                    <img src="img/blog/default/blog-50.jpg" class="img-fluid border-radius-0" alt="5 Fun Things to Do at the Beach">
-                                                </a>
-                                            </div>
-                                            <div class="col-sm-7 pl-sm-0">
-                                                <div class="thumb-info-caption-text">
-                                                    <div class="d-inline-block text-default text-1 float-none">
-                                                        <a href="blog-post.html" class="text-decoration-none text-color-default">January 12, 2019</a>
-                                                    </div>
-                                                    <h4 class="d-block pb-2 line-height-2 text-3 text-dark font-weight-bold mb-0">
-                                                        <a href="blog-post.html" class="text-decoration-none text-color-dark">5 Fun Things to Do at the Beach</a>
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
+                                    <div class="col-lg-6">
 
-                                    <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
-                                        <div class="row align-items-center pb-1">
-                                            <div class="col-sm-4">
-                                                <a href="blog-post.html">
-                                                    <img src="img/blog/default/blog-51.jpg" class="img-fluid border-radius-0" alt="Amazingly Fresh Fruit And Herb Drinks For Summer">
-                                                </a>
-                                            </div>
-                                            <div class="col-sm-7 pl-sm-0">
-                                                <div class="thumb-info-caption-text">
-                                                    <div class="d-inline-block text-default text-1 float-none">
-                                                        <a href="blog-post.html" class="text-decoration-none text-color-default">January 12, 2019</a>
-                                                    </div>
-                                                    <h4 class="d-block pb-2 line-height-2 text-3 text-dark font-weight-bold mb-0">
-                                                        <a href="blog-post.html" class="text-decoration-none text-color-dark">Amazingly Fresh Fruit And Herb Drinks For Summer</a>
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
+                                            @foreach($cloud_blogs as $cloud_blog)
 
-                                    <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
-                                        <div class="row align-items-center pb-1">
-                                            <div class="col-sm-4">
-                                                <a href="blog-post.html">
-                                                    <img src="img/blog/default/blog-52.jpg" class="img-fluid border-radius-0" alt="The 20 Best Appetizers with 5 Ingredients">
-                                                </a>
-                                            </div>
-                                            <div class="col-sm-7 pl-sm-0">
-                                                <div class="thumb-info-caption-text">
-                                                    <div class="d-inline-block text-default text-1 float-none">
-                                                        <a href="blog-post.html" class="text-decoration-none text-color-default">January 12, 2019</a>
+                                                <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                                    <div class="row align-items-center pb-1">
+                                                        <div class="col-sm-4">
+                                                            <a href="blog-post.html">
+                                                                <img src="img/blog/default/blog-47.jpg" class="img-fluid border-radius-0" alt="Gadgets That Make Your Smartphone Even Smarter">
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-sm-8 pl-sm-0">
+                                                            <div class="thumb-info-caption-text">
+                                                                <div class="d-inline-block text-default text-1 float-none">
+                                                                    <a href="/c/{{ $cloud_blog->category_id}}" class="text-decoration-none text-color-default">{{ $cloud_blog->category_name}}</a>
+                                                                </div>
+                                                                <h4 class="d-block pb-2 line-height-2 text-3 text-dark font-weight-bold mb-0">
+                                                                    <a href="/show?id={{ $cloud_blog->id}}&name={{ $cloud_blog->name}}" class="text-decoration-none text-color-dark">{{ $cloud_blog->name}}</a>
+                                                                </h4>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <h4 class="d-block pb-2 line-height-2 text-3 text-dark font-weight-bold mb-0">
-                                                        <a href="blog-post.html" class="text-decoration-none text-color-dark">The 20 Best Appetizers with 5 Ingredients</a>
-                                                    </h4>
-                                                </div>
-                                            </div>
+                                                </article> 
+
+                                            @endforeach
                                         </div>
-                                    </article>
+                                   
+
+
+                                    
                                 </div>
                             </div>
 
@@ -460,68 +394,32 @@
                                         </div>
                                     </article>
                                 </div>
-                                <div class="col-lg-6">
+                                  <div class="col-lg-6">
 
-                                    <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
-                                        <div class="row align-items-center pb-1">
-                                            <div class="col-sm-4">
-                                                <a href="blog-post.html">
-                                                    <img src="img/blog/default/blog-54.jpg" class="img-fluid border-radius-0" alt="How to Make Friends as a Grown-Up">
-                                                </a>
-                                            </div>
-                                            <div class="col-sm-7 pl-sm-0">
-                                                <div class="thumb-info-caption-text">
-                                                    <div class="d-inline-block text-default text-1 float-none">
-                                                        <a href="blog-post.html" class="text-decoration-none text-color-default">January 12, 2019</a>
-                                                    </div>
-                                                    <h4 class="d-block pb-2 line-height-2 text-3 text-dark font-weight-bold mb-0">
-                                                        <a href="blog-post.html" class="text-decoration-none text-color-dark">How to Make Friends as a Grown-Up</a>
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
+                                            @foreach($dwh_blogs as $dwh_blog)
 
-                                    <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
-                                        <div class="row align-items-center pb-1">
-                                            <div class="col-sm-4">
-                                                <a href="blog-post.html">
-                                                    <img src="img/blog/default/blog-55.jpg" class="img-fluid border-radius-0" alt="Simple Ways to Have a Pretty Face">
-                                                </a>
-                                            </div>
-                                            <div class="col-sm-7 pl-sm-0">
-                                                <div class="thumb-info-caption-text">
-                                                    <div class="d-inline-block text-default text-1 float-none">
-                                                        <a href="blog-post.html" class="text-decoration-none text-color-default">January 12, 2019</a>
+                                                <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                                    <div class="row align-items-center pb-1">
+                                                        <div class="col-sm-4">
+                                                            <a href="blog-post.html">
+                                                                <img src="img/blog/default/blog-47.jpg" class="img-fluid border-radius-0" alt="Gadgets That Make Your Smartphone Even Smarter">
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-sm-8 pl-sm-0">
+                                                            <div class="thumb-info-caption-text">
+                                                                <div class="d-inline-block text-default text-1 float-none">
+                                                                    <a href="/c/{{ $dwh_blog->category_id}}" class="text-decoration-none text-color-default">{{ $dwh_blog->category_name}}</a>
+                                                                </div>
+                                                                <h4 class="d-block pb-2 line-height-2 text-3 text-dark font-weight-bold mb-0">
+                                                                    <a href="/show?id={{ $dwh_blog->id}}&name={{ $dwh_blog->name}}" class="text-decoration-none text-color-dark">{{ $dwh_blog->name}}</a>
+                                                                </h4>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <h4 class="d-block pb-2 line-height-2 text-3 text-dark font-weight-bold mb-0">
-                                                        <a href="blog-post.html" class="text-decoration-none text-color-dark">Simple Ways to Have a Pretty Face</a>
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
+                                                </article> 
 
-                                    <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
-                                        <div class="row align-items-center pb-1">
-                                            <div class="col-sm-4">
-                                                <a href="blog-post.html">
-                                                    <img src="img/blog/default/blog-56.jpg" class="img-fluid border-radius-0" alt="Ranking the greatest players in basketball">
-                                                </a>
-                                            </div>
-                                            <div class="col-sm-7 pl-sm-0">
-                                                <div class="thumb-info-caption-text">
-                                                    <div class="d-inline-block text-default text-1 float-none">
-                                                        <a href="blog-post.html" class="text-decoration-none text-color-default">January 12, 2019</a>
-                                                    </div>
-                                                    <h4 class="d-block pb-2 line-height-2 text-3 text-dark font-weight-bold mb-0">
-                                                        <a href="blog-post.html" class="text-decoration-none text-color-dark">Ranking the greatest players in basketball</a>
-                                                    </h4>
-                                                </div>
-                                            </div>
+                                            @endforeach
                                         </div>
-                                    </article>
-                                </div>
                             </div>
 
                             <div class="text-center py-3 mb-4">

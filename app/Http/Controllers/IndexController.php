@@ -22,7 +22,26 @@ class IndexController extends Controller
                                         WHERE  a.`user_id` = b.`id`
                                         AND a.`category_id` = c.`id` ");
 
-        return view('welcome',compact('categories','blogs'));
+
+         $bigdata_blogs =  DB::select("SELECT  a.`id`, a.`name`, a.`summary`, a.`user_id`  , b.`name` as author , a.`category_id` , c.`name` as category_name 
+                                       FROM `blogs` a , `users` b,  `categories` c
+                                        WHERE  a.`user_id` = b.`id`
+                                        AND a.`category_id` = c.`id`
+                                        AND c.`name` = 'Big Data' ");
+
+         $cloud_blogs =  DB::select("SELECT  a.`id`, a.`name`, a.`summary`, a.`user_id`  , b.`name` as author , a.`category_id` , c.`name` as category_name 
+                                       FROM `blogs` a , `users` b,  `categories` c
+                                        WHERE  a.`user_id` = b.`id`
+                                        AND a.`category_id` = c.`id`
+                                        AND c.`name` = 'Cloud' ");
+
+         $dwh_blogs =  DB::select("SELECT  a.`id`, a.`name`, a.`summary`, a.`user_id`  , b.`name` as author , a.`category_id` , c.`name` as category_name 
+                                       FROM `blogs` a , `users` b,  `categories` c
+                                        WHERE  a.`user_id` = b.`id`
+                                        AND a.`category_id` = c.`id`
+                                        AND c.`name` = 'DWH' ");
+
+        return view('welcome',compact('categories','blogs','bigdata_blogs','cloud_blogs', 'dwh_blogs'));
 
 
     }
