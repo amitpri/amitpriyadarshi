@@ -22,7 +22,7 @@ class IndexController extends Controller
                                        FROM `blogs` a , `users` b,  `categories` c
                                         WHERE  a.`user_id` = b.`id`
                                         AND a.`category_id` = c.`id`
-                                        ORDER BY a.`top` DESC LIMIT 4  ");
+                                        ORDER BY a.`top` DESC  ");
 
         $blogs_top = $blogs;
 
