@@ -147,33 +147,33 @@
                                                                     </a> 
                                                                 </li>
                                                                 <li class="dropdown dropdown-full-color dropdown-light dropdown-mega">
-                                                                    <a class="dropdown-item dropdown-toggle" href="elements.html">
+                                                                    <a class="dropdown-item dropdown-toggle" href="/bigdata">
                                                                         Big Data
                                                                     </a> 
                                                                 </li>
                                                                 <li class="dropdown dropdown-full-color dropdown-light">
-                                                                    <a class="dropdown-item dropdown-toggle" href="#">
-                                                                        Analytics
-                                                                    </a> 
-                                                                </li>
-                                                                <li class="dropdown dropdown-full-color dropdown-light">
-                                                                    <a class="dropdown-item dropdown-toggle" href="#">
+                                                                    <a class="dropdown-item dropdown-toggle" href="/cloud">
                                                                         Cloud
                                                                     </a> 
                                                                 </li>
                                                                 <li class="dropdown dropdown-full-color dropdown-light">
-                                                                    <a class="dropdown-item dropdown-toggle" href="#">
+                                                                    <a class="dropdown-item dropdown-toggle" href="/dwh">
+                                                                      Data Warehouse  
+                                                                    </a> 
+                                                                </li>
+                                                                <li class="dropdown dropdown-full-color dropdown-light">
+                                                                    <a class="dropdown-item dropdown-toggle" href="/analytics">
+                                                                        Analytics
+                                                                    </a> 
+                                                                </li>
+                                                                <li class="dropdown dropdown-full-color dropdown-light">
+                                                                    <a class="dropdown-item dropdown-toggle" href="/devops">
                                                                         DevOps
                                                                     </a> 
                                                                 </li>
                                                                 <li class="dropdown dropdown-full-color dropdown-light">
-                                                                    <a class="dropdown-item dropdown-toggle" href="#">
+                                                                    <a class="dropdown-item dropdown-toggle" href="/general">
                                                                         General
-                                                                    </a> 
-                                                                </li>
-                                                                <li class="dropdown dropdown-full-color dropdown-light">
-                                                                    <a class="dropdown-item dropdown-toggle" href="#">
-                                                                        Personal
                                                                     </a> 
                                                                 </li>
                                                             </ul>
