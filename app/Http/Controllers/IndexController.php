@@ -17,7 +17,8 @@ class IndexController extends Controller
         $categories = Category::get(['id', 'name', ]);
  
 
-         $blogs =  DB::select("SELECT  a.`id`, a.`name`, a.`summary`, a.`user_id`  , b.`name` as author , a.`category_id` , c.`name` as category_name 
+         $blogs =  DB::select("SELECT  a.`id`, a.`name`, a.`summary`, a.`user_id`  , b.`name` as author 
+                                        , a.`category_id` , c.`name` as category_name , a.`top` 
                                        FROM `blogs` a , `users` b,  `categories` c
                                         WHERE  a.`user_id` = b.`id`
                                         AND a.`category_id` = c.`id` ");
@@ -25,19 +26,19 @@ class IndexController extends Controller
          $blogs_top = $blogs;
 
 
-         $bigdata_blogs =  DB::select("SELECT  a.`id`, a.`name`, a.`summary`, a.`user_id`  , b.`name` as author , a.`category_id` , c.`name` as category_name 
+         $bigdata_blogs =  DB::select("SELECT  a.`id`, a.`name`, a.`summary`, a.`user_id`  , b.`name` as author , a.`category_id` , c.`name` as category_name , a.`top` 
                                        FROM `blogs` a , `users` b,  `categories` c
                                         WHERE  a.`user_id` = b.`id`
                                         AND a.`category_id` = c.`id`
                                         AND c.`name` = 'Big Data' ");
 
-         $cloud_blogs =  DB::select("SELECT  a.`id`, a.`name`, a.`summary`, a.`user_id`  , b.`name` as author , a.`category_id` , c.`name` as category_name 
+         $cloud_blogs =  DB::select("SELECT  a.`id`, a.`name`, a.`summary`, a.`user_id`  , b.`name` as author , a.`category_id` , c.`name` as category_name , a.`top` 
                                        FROM `blogs` a , `users` b,  `categories` c
                                         WHERE  a.`user_id` = b.`id`
                                         AND a.`category_id` = c.`id`
                                         AND c.`name` = 'Cloud' ");
 
-         $dwh_blogs =  DB::select("SELECT  a.`id`, a.`name`, a.`summary`, a.`user_id`  , b.`name` as author , a.`category_id` , c.`name` as category_name 
+         $dwh_blogs =  DB::select("SELECT  a.`id`, a.`name`, a.`summary`, a.`user_id`  , b.`name` as author , a.`category_id` , c.`name` as category_name, a.`top`  
                                        FROM `blogs` a , `users` b,  `categories` c
                                         WHERE  a.`user_id` = b.`id`
                                         AND a.`category_id` = c.`id`
