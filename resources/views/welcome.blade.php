@@ -258,29 +258,39 @@
 
                             <div class="row pb-1">
 
-                                <div class="col-lg-6 mb-4 pb-1">
-                                    <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-2 mb-2">
-                                        <div class="row">
-                                            <div class="col">
-                                                <a href="blog-post.html">
-                                                    <img src="img/blog/default/blog-67.jpg" class="img-fluid border-radius-0" alt="Why should I buy a smartwatch?">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="thumb-info-caption-text">
-                                                    <div class="d-inline-block text-default text-1 mt-2 float-none">
-                                                        <a href="blog-post.html" class="text-decoration-none text-color-default">January 12, 2019</a>
+                                 @foreach($bigdata_blogs_top as $bigdata_blog_top)
+
+                                    @if (($bigdata_blog_top->top) === 1)
+
+                                        <div class="col-lg-6 mb-4 pb-1">
+                                            <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-2 mb-2">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <a href="blog-post.html">
+                                                            <img src="img/blog/default/blog-67.jpg" class="img-fluid border-radius-0" alt="Why should I buy a smartwatch?">
+                                                        </a>
                                                     </div>
-                                                    <h4 class="d-block line-height-2 text-4 text-dark font-weight-bold mb-0">
-                                                        <a href="blog-post.html" class="text-decoration-none text-color-dark">Why should I buy a smartwatch?</a>
-                                                    </h4>
                                                 </div>
-                                            </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="thumb-info-caption-text">
+                                                            <div class="d-inline-block text-default text-1 mt-2 float-none">
+                                                                <a href="/c/{{$category->id}}/{{$category->name}}" class="text-decoration-none text-color-default">{{$bigdata_blog_top->category_name}}</a>
+                                                            </div>
+                                                            <h4 class="d-block line-height-2 text-4 text-dark font-weight-bold mb-0">
+                                                                <a href="/show?id={{ $bigdata_blog_top->id}}&name={{ $bigdata_blog_top->name}}" class="text-decoration-none text-color-dark">{{$bigdata_blog_top->name}}</a>
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
                                         </div>
-                                    </article>
-                                </div>
+
+                                    @endif
+
+                                @endforeach
+
+
                                 <div class="col-lg-6">
 
 
@@ -318,54 +328,63 @@
 
                             <div class="row pb-1">
 
-                                <div class="col-lg-6 mb-4 pb-1">
-                                    <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-2 mb-2">
-                                        <div class="row">
-                                            <div class="col">
-                                                <a href="blog-post.html">
-                                                    <img src="img/blog/default/blog-49.jpg" class="img-fluid border-radius-0" alt="The Best Way to Ride a Motorcycle">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="thumb-info-caption-text">
-                                                    <div class="d-inline-block text-default text-1 mt-2 float-none">
-                                                        <a href="blog-post.html" class="text-decoration-none text-color-default">January 12, 2019</a>
+                                 @foreach($cloud_blogs_top as $cloud_blog_top)
+
+                                    @if (($cloud_blog_top->top) === 1)
+
+                                        <div class="col-lg-6 mb-4 pb-1">
+                                            <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-2 mb-2">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <a href="blog-post.html">
+                                                            <img src="img/blog/default/blog-67.jpg" class="img-fluid border-radius-0" alt="Why should I buy a smartwatch?">
+                                                        </a>
                                                     </div>
-                                                    <h4 class="d-block line-height-2 text-4 text-dark font-weight-bold mb-0">
-                                                        <a href="blog-post.html" class="text-decoration-none text-color-dark">The Best Way to Ride a Motorcycle</a>
-                                                    </h4>
                                                 </div>
-                                            </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="thumb-info-caption-text">
+                                                            <div class="d-inline-block text-default text-1 mt-2 float-none">
+                                                                <a href="/c/{{$category->id}}/{{$category->name}}" class="text-decoration-none text-color-default">{{$cloud_blog_top->category_name}}</a>
+                                                            </div>
+                                                            <h4 class="d-block line-height-2 text-4 text-dark font-weight-bold mb-0">
+                                                                <a href="/show?id={{ $cloud_blog_top->id}}&name={{ $cloud_blog_top->name}}" class="text-decoration-none text-color-dark">{{$cloud_blog_top->name}}</a>
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
                                         </div>
-                                    </article>
-                                </div>
+
+                                    @endif
+
+                                @endforeach
+
                                 <div class="col-lg-6">
 
                                    @foreach($cloud_blogs as $cloud_blog)
 
-                                                <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
-                                                    <div class="row align-items-center pb-1">
-                                                        <div class="col-sm-4">
-                                                            <a href="blog-post.html">
-                                                                <img src="img/blog/default/blog-47.jpg" class="img-fluid border-radius-0" alt="Gadgets That Make Your Smartphone Even Smarter">
-                                                            </a>
+                                        <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                            <div class="row align-items-center pb-1">
+                                                <div class="col-sm-4">
+                                                    <a href="blog-post.html">
+                                                        <img src="img/blog/default/blog-47.jpg" class="img-fluid border-radius-0" alt="Gadgets That Make Your Smartphone Even Smarter">
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-8 pl-sm-0">
+                                                    <div class="thumb-info-caption-text">
+                                                        <div class="d-inline-block text-default text-1 float-none">
+                                                            <a href="/c/{{ $cloud_blog->category_id}}" class="text-decoration-none text-color-default">{{ $cloud_blog->category_name}}</a>
                                                         </div>
-                                                        <div class="col-sm-8 pl-sm-0">
-                                                            <div class="thumb-info-caption-text">
-                                                                <div class="d-inline-block text-default text-1 float-none">
-                                                                    <a href="/c/{{ $cloud_blog->category_id}}" class="text-decoration-none text-color-default">{{ $cloud_blog->category_name}}</a>
-                                                                </div>
-                                                                <h4 class="d-block pb-2 line-height-2 text-3 text-dark font-weight-bold mb-0">
-                                                                    <a href="/show?id={{ $cloud_blog->id}}&name={{ $cloud_blog->name}}" class="text-decoration-none text-color-dark">{{ $cloud_blog->name}}</a>
-                                                                </h4>
-                                                            </div>
-                                                        </div>
+                                                        <h4 class="d-block pb-2 line-height-2 text-3 text-dark font-weight-bold mb-0">
+                                                            <a href="/show?id={{ $cloud_blog->id}}&name={{ $cloud_blog->name}}" class="text-decoration-none text-color-dark">{{ $cloud_blog->name}}</a>
+                                                        </h4>
                                                     </div>
-                                                </article> 
+                                                </div>
+                                            </div>
+                                        </article> 
 
-                                            @endforeach
+                                    @endforeach
                                 </div>
                             </div>
 
@@ -375,29 +394,38 @@
 
                             <div class="row pb-1">
 
-                                <div class="col-lg-6 mb-4 pb-1">
-                                    <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-2 mb-2">
-                                        <div class="row">
-                                            <div class="col">
-                                                <a href="blog-post.html">
-                                                    <img src="img/blog/default/blog-53.jpg" class="img-fluid border-radius-0" alt="6 Tips to Memorize Before Your Next Flight">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="thumb-info-caption-text">
-                                                    <div class="d-inline-block text-default text-1 mt-2 float-none">
-                                                        <a href="blog-post.html" class="text-decoration-none text-color-default">January 12, 2019</a>
+                                 @foreach($dwh_blogs_top as $dwh_blog_top)
+
+                                    @if (($dwh_blog_top->top) === 1)
+
+                                        <div class="col-lg-6 mb-4 pb-1">
+                                            <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-2 mb-2">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <a href="blog-post.html">
+                                                            <img src="img/blog/default/blog-67.jpg" class="img-fluid border-radius-0" alt="Why should I buy a smartwatch?">
+                                                        </a>
                                                     </div>
-                                                    <h4 class="d-block line-height-2 text-4 text-dark font-weight-bold mb-0">
-                                                        <a href="blog-post.html" class="text-decoration-none text-color-dark">6 Tips to Memorize Before Your Next Flight</a>
-                                                    </h4>
                                                 </div>
-                                            </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="thumb-info-caption-text">
+                                                            <div class="d-inline-block text-default text-1 mt-2 float-none">
+                                                                <a href="/c/{{$category->id}}/{{$category->name}}" class="text-decoration-none text-color-default">{{$dwh_blog_top->category_name}}</a>
+                                                            </div>
+                                                            <h4 class="d-block line-height-2 text-4 text-dark font-weight-bold mb-0">
+                                                                <a href="/show?id={{ $dwh_blog_top->id}}&name={{ $dwh_blog_top->name}}" class="text-decoration-none text-color-dark">{{$dwh_blog_top->name}}</a>
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
                                         </div>
-                                    </article>
-                                </div>
+
+                                    @endif
+
+                                @endforeach
+
                                 <div class="col-lg-6">
 
                                      @foreach($dwh_blogs as $dwh_blog)

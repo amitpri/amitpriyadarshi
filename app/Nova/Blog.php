@@ -77,6 +77,11 @@ class Blog extends Resource
                         '1' => 'Yes',
             ])->displayUsingLabels(), 
 
+             Select::make('Featured', 'featured')->options([
+                        '0' => 'No', 
+                        '1' => 'Yes',
+            ])->displayUsingLabels(), 
+
             Select::make('Approved', 'approved')->options([
                         '0' => 'No', 
                         '1' => 'Yes',

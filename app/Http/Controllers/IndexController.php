@@ -23,7 +23,11 @@ class IndexController extends Controller
                                         WHERE  a.`user_id` = b.`id`
                                         AND a.`category_id` = c.`id` ");
 
-         $blogs_top = $blogs;
+        $blogs_top = $blogs;
+
+        $blogs_featured = $blogs;
+
+        $blogs_popular = $blogs;
 
 
          $bigdata_blogs =  DB::select("SELECT  a.`id`, a.`name`, a.`summary`, a.`user_id`  , b.`name` as author , a.`category_id` , c.`name` as category_name , a.`top` 
@@ -32,11 +36,16 @@ class IndexController extends Controller
                                         AND a.`category_id` = c.`id`
                                         AND c.`name` = 'Big Data' ");
 
+
+        $bigdata_blogs_top = $bigdata_blogs;
+
          $cloud_blogs =  DB::select("SELECT  a.`id`, a.`name`, a.`summary`, a.`user_id`  , b.`name` as author , a.`category_id` , c.`name` as category_name , a.`top` 
                                        FROM `blogs` a , `users` b,  `categories` c
                                         WHERE  a.`user_id` = b.`id`
                                         AND a.`category_id` = c.`id`
                                         AND c.`name` = 'Cloud' ");
+
+        $cloud_blogs_top = $cloud_blogs;
 
          $dwh_blogs =  DB::select("SELECT  a.`id`, a.`name`, a.`summary`, a.`user_id`  , b.`name` as author , a.`category_id` , c.`name` as category_name, a.`top`  
                                        FROM `blogs` a , `users` b,  `categories` c
@@ -44,7 +53,10 @@ class IndexController extends Controller
                                         AND a.`category_id` = c.`id`
                                         AND c.`name` = 'DWH' ");
 
-        return view('welcome',compact('categories','blogs','blogs_top','bigdata_blogs','cloud_blogs', 'dwh_blogs'));
+         $dwh_blogs_top =  $dwh_blogs;
+
+        return view('welcome',compact('categories','blogs','blogs_top' , 'blogs_featured', 'blogs_popular', 'bigdata_blogs','bigdata_blogs_top'
+            ,'cloud_blogs','cloud_blogs_top', 'dwh_blogs', 'dwh_blogs_top'));
 
 
     }
