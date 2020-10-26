@@ -79,7 +79,7 @@ class IndexController extends Controller
 
         $blogs = Blog::where('category_id',$blogid)->get(['id', 'user_id', 'category_id', 'name', 'blog', 'tags', 'image1', 'image2']);
 
-        return view('categories','blogs',compact('blogs'));
+        return view( 'blogs',compact('categories','blogs'));
     }
 
     public function profile()

@@ -150,7 +150,7 @@
                                                                 @foreach($categories as $category)
 
                                                                     <li class="dropdown dropdown-full-color dropdown-light dropdown-mega">
-                                                                        <a class="dropdown-item dropdown-toggle" href="/{{$category->id}}/{{$category->name}}">
+                                                                        <a class="dropdown-item dropdown-toggle" href="/c/{{$category->id}}/{{$category->name}}">
                                                                             {{ $category->name }}
                                                                         </a> 
                                                                     </li>
