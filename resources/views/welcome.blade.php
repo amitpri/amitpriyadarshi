@@ -463,113 +463,28 @@
 
                                     <ul class="simple-post-list">
 
-                                        <li>
-                                            <article>
-                                                <div class="post-image">
-                                                    <div class="img-thumbnail img-thumbnail-no-borders d-block">
-                                                        <a href="blog-post.html">
-                                                            <img src="img/blog/square/blog-55.jpg" class="border-radius-0" width="50" height="50" alt="Simple Ways to Have a Pretty Face">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="post-info">
-                                                    <div class="post-meta">
-                                                        January 12, 2019
-                                                    </div>
-                                                    <h4 class="font-weight-normal text-3 mb-0"><a href="blog-post.html" class="text-dark">Simple Ways to Have a Pretty Face</a></h4>
-                                                </div>
-                                            </article>
-                                        </li>
+                                        @foreach($blogs_popular as $blog_popular)
 
-                                        <li>
-                                            <article>
-                                                <div class="post-image">
-                                                    <div class="img-thumbnail img-thumbnail-no-borders d-block">
-                                                        <a href="blog-post.html">
-                                                            <img src="img/blog/square/blog-56.jpg" class="border-radius-0" width="50" height="50" alt="Ranking the greatest players in basketball">
-                                                        </a>
+                                            <li>
+                                                <article>
+                                                    <div class="post-image">
+                                                        <div class="img-thumbnail img-thumbnail-no-borders d-block">
+                                                            <a href="blog-post.html">
+                                                                <img src="img/blog/square/blog-55.jpg" class="border-radius-0" width="50" height="50" alt="Simple Ways to Have a Pretty Face">
+                                                            </a>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="post-info">
-                                                    <div class="post-meta">
-                                                        January 12, 2019
+                                                    <div class="post-info">
+                                                        <div class="post-meta">
+                                                            January 12, 2019
+                                                        </div>
+                                                        <h4 class="font-weight-normal text-3 mb-0"><a href="blog-post.html" class="text-dark">{{ $blog_popular->name }}</a></h4>
                                                     </div>
-                                                    <h4 class="font-weight-normal text-3 mb-0"><a href="blog-post.html" class="text-dark">Ranking the greatest players in basketball</a></h4>
-                                                </div>
-                                            </article>
-                                        </li>
+                                                </article>
+                                            </li>
 
-                                        <li>
-                                            <article>
-                                                <div class="post-image">
-                                                    <div class="img-thumbnail img-thumbnail-no-borders d-block">
-                                                        <a href="blog-post.html">
-                                                            <img src="img/blog/square/blog-57.jpg" class="border-radius-0" width="50" height="50" alt="4 Ways to Look Cool in Glasses">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="post-info">
-                                                    <div class="post-meta">
-                                                        January 12, 2019
-                                                    </div>
-                                                    <h4 class="font-weight-normal text-3 mb-0"><a href="blog-post.html" class="text-dark">4 Ways to Look Cool in Glasses</a></h4>
-                                                </div>
-                                            </article>
-                                        </li>
-
-                                        <li>
-                                            <article>
-                                                <div class="post-image">
-                                                    <div class="img-thumbnail img-thumbnail-no-borders d-block">
-                                                        <a href="blog-post.html">
-                                                            <img src="img/blog/square/blog-58.jpg" class="border-radius-0" width="50" height="50" alt="Top Camper Trailer Towing Tips">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="post-info">
-                                                    <div class="post-meta">
-                                                        January 12, 2019
-                                                    </div>
-                                                    <h4 class="font-weight-normal text-3 mb-0"><a href="blog-post.html" class="text-dark">Top Camper Trailer Towing Tips</a></h4>
-                                                </div>
-                                            </article>
-                                        </li>
-
-                                        <li>
-                                            <article>
-                                                <div class="post-image">
-                                                    <div class="img-thumbnail img-thumbnail-no-borders d-block">
-                                                        <a href="blog-post.html">
-                                                            <img src="img/blog/square/blog-59.jpg" class="border-radius-0" width="50" height="50" alt="5 Lovely Walks in New York">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="post-info">
-                                                    <div class="post-meta">
-                                                        January 12, 2019
-                                                    </div>
-                                                    <h4 class="font-weight-normal text-3 mb-0"><a href="blog-post.html" class="text-dark">5 Lovely Walks in New York</a></h4>
-                                                </div>
-                                            </article>
-                                        </li>
-
-                                        <li>
-                                            <article>
-                                                <div class="post-image">
-                                                    <div class="img-thumbnail img-thumbnail-no-borders d-block">
-                                                        <a href="blog-post.html">
-                                                            <img src="img/blog/square/blog-60.jpg" class="border-radius-0" width="50" height="50" alt="How to Become a Professional Photographer">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="post-info">
-                                                    <div class="post-meta">
-                                                        January 12, 2019
-                                                    </div>
-                                                    <h4 class="font-weight-normal text-3 mb-0"><a href="blog-post.html" class="text-dark">How to Become a Professional Photographer</a></h4>
-                                                </div>
-                                            </article>
-                                        </li>
+                                        @endforeach()
+                                           
                                     </ul>
 
                                 </div>
@@ -699,58 +614,37 @@
 
                             <div class="pb-2">
 
-                                <div class="mb-4 pb-2">
-                                    <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-2 mb-2">
-                                        <div class="row">
-                                            <div class="col">
-                                                <a href="blog-post.html">
-                                                    <img src="img/blog/default/blog-65.jpg" class="img-fluid border-radius-0" alt="Main Reasons To Stop Texting And Driving">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="thumb-info-caption-text">
-                                                    <div class="d-inline-block text-default text-1 mt-2 float-none">
-                                                        <a href="blog-post.html" class="text-decoration-none text-color-default">January 12, 2019</a>
-                                                    </div>
-                                                    <h4 class="d-block line-height-2 text-4 text-dark font-weight-bold mb-0">
-                                                        <a href="blog-post.html" class="text-decoration-none text-color-dark">Main Reasons To Stop Texting And Driving</a>
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
+                                @foreach($blogs_featured as $blog_featured)
 
-                                <div class="mb-4 pb-2">
-                                    <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-2 mb-2">
-                                        <div class="row">
-                                            <div class="col">
-                                                <a href="blog-post.html">
-                                                    <img src="img/blog/default/blog-66.jpg" class="img-fluid border-radius-0" alt="Tips to Help You Quickly Prepare your Lunch">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="thumb-info-caption-text">
-                                                    <div class="d-inline-block text-default text-1 mt-2 float-none">
-                                                        <a href="blog-post.html" class="text-decoration-none text-color-default">January 12, 2019</a>
-                                                    </div>
-                                                    <h4 class="d-block line-height-2 text-4 text-dark font-weight-bold mb-0">
-                                                        <a href="blog-post.html" class="text-decoration-none text-color-dark">Tips to Help You Quickly Prepare your Lunch</a>
-                                                    </h4>
+                                    <div class="mb-4 pb-2">
+                                        <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-2 mb-2">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <a href="blog-post.html">
+                                                        <img src="img/blog/default/blog-65.jpg" class="img-fluid border-radius-0" alt="Main Reasons To Stop Texting And Driving">
+                                                    </a>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </article>
-                                </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="thumb-info-caption-text">
+                                                        <div class="d-inline-block text-default text-1 mt-2 float-none">
+                                                            <a href="/c/{{$category->id}}/{{$category->name}}" class="text-decoration-none text-color-default">{{ $blog_featured->category_name}}</a>
+                                                        </div>
+                                                        <h4 class="d-block line-height-2 text-4 text-dark font-weight-bold mb-0">
+                                                            <a href="/show?id={{ $blog_featured->id}}&name={{ $blog_featured->name}}" class="text-decoration-none text-color-dark">{{ $blog_featured->name}}</a>
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                @endforeach
+ 
                             </div>
 
-           
-
-                      
+                    
 
                         </div>
 
