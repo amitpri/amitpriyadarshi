@@ -296,25 +296,29 @@
 
                                     @foreach($bigdata_blogs as $bigdata_blog)
 
-                                    <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
-                                        <div class="row align-items-center pb-1">
-                                            <div class="col-sm-4">
-                                                <a href="blog-post.html">
-                                                    <img src="img/blog/default/blog-47.jpg" class="img-fluid border-radius-0" alt="Gadgets That Make Your Smartphone Even Smarter">
-                                                </a>
-                                            </div>
-                                            <div class="col-sm-8 pl-sm-0">
-                                                <div class="thumb-info-caption-text">
-                                                    <div class="d-inline-block text-default text-1 float-none">
-                                                        <a href="/c/{{$category->id}}/{{$category->name}}" class="text-decoration-none text-color-default">{{$bigdata_blog->category_name}}</a>
+                                        @if (($bigdata_blog->top2) === 0)
+
+                                            <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                                <div class="row align-items-center pb-1">
+                                                    <div class="col-sm-4">
+                                                        <a href="blog-post.html">
+                                                            <img src="img/blog/default/blog-47.jpg" class="img-fluid border-radius-0" alt="Gadgets That Make Your Smartphone Even Smarter">
+                                                        </a>
                                                     </div>
-                                                    <h4 class="d-block pb-2 line-height-2 text-3 text-dark font-weight-bold mb-0">
-                                                        <a href="/show?id={{ $bigdata_blog->id}}&name={{ $bigdata_blog->name}}" class="text-decoration-none text-color-dark">{{$bigdata_blog->name}}</a>
-                                                    </h4>
+                                                    <div class="col-sm-8 pl-sm-0">
+                                                        <div class="thumb-info-caption-text">
+                                                            <div class="d-inline-block text-default text-1 float-none">
+                                                                <a href="/c/{{$category->id}}/{{$category->name}}" class="text-decoration-none text-color-default">{{$bigdata_blog->category_name}}</a>
+                                                            </div>
+                                                            <h4 class="d-block pb-2 line-height-2 text-3 text-dark font-weight-bold mb-0">
+                                                                <a href="/show?id={{ $bigdata_blog->id}}&name={{ $bigdata_blog->name}}" class="text-decoration-none text-color-dark">{{$bigdata_blog->name}}</a>
+                                                            </h4>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </article>
+                                            </article>
+
+                                        @endif
 
                                      @endforeach
 

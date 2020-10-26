@@ -34,7 +34,8 @@ class IndexController extends Controller
                                        FROM `blogs` a , `users` b,  `categories` c
                                         WHERE  a.`user_id` = b.`id`
                                         AND a.`category_id` = c.`id`
-                                        AND c.`name` = 'Big Data' ");
+                                        AND c.`name` = 'Big Data' 
+                                        ORDER BY a.`top2` DESC LIMIT 4   ");
 
 
         $bigdata_blogs_top = $bigdata_blogs;
@@ -43,7 +44,8 @@ class IndexController extends Controller
                                        FROM `blogs` a , `users` b,  `categories` c
                                         WHERE  a.`user_id` = b.`id`
                                         AND a.`category_id` = c.`id`
-                                        AND c.`name` = 'Cloud' ");
+                                        AND c.`name` = 'Cloud' 
+                                        ORDER BY a.`top2` DESC LIMIT 4 ");
 
         $cloud_blogs_top = $cloud_blogs;
 
@@ -51,7 +53,8 @@ class IndexController extends Controller
                                        FROM `blogs` a , `users` b,  `categories` c
                                         WHERE  a.`user_id` = b.`id`
                                         AND a.`category_id` = c.`id`
-                                        AND c.`name` = 'DWH' ");
+                                        AND c.`name` = 'DWH'
+                                        ORDER BY a.`top2` DESC LIMIT 4 ");
 
          $dwh_blogs_top =  $dwh_blogs;
 
