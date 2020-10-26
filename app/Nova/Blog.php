@@ -62,10 +62,15 @@ class Blog extends Resource
 
             AdvancedImage::make('Image2')->disk('public')->croppable(4/3)->resize(400, 300),
 
- //           Select::make('Approved', 'approved')->options([
-   //                     'No' => 'No', 
-    //                    'Yes' => 'Yes',
-  //          ])->default(0), 
+            Select::make('Top', 'top')->options([
+                        '0' => 'No', 
+                        '1' => 'Yes',
+            ])->displayUsingLabels(), 
+
+            Select::make('Approved', 'approved')->options([
+                        '0' => 'No', 
+                        '1' => 'Yes',
+            ])->displayUsingLabels(),
 
    //         BelongsToMany::make('Subject'),
 
