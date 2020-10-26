@@ -146,36 +146,18 @@
                                                                         Home
                                                                     </a> 
                                                                 </li>
-                                                                <li class="dropdown dropdown-full-color dropdown-light dropdown-mega">
-                                                                    <a class="dropdown-item dropdown-toggle" href="/bigdata">
-                                                                        Big Data
-                                                                    </a> 
-                                                                </li>
-                                                                <li class="dropdown dropdown-full-color dropdown-light">
-                                                                    <a class="dropdown-item dropdown-toggle" href="/cloud">
-                                                                        Cloud
-                                                                    </a> 
-                                                                </li>
-                                                                <li class="dropdown dropdown-full-color dropdown-light">
-                                                                    <a class="dropdown-item dropdown-toggle" href="/dwh">
-                                                                      Data Warehouse  
-                                                                    </a> 
-                                                                </li>
-                                                                <li class="dropdown dropdown-full-color dropdown-light">
-                                                                    <a class="dropdown-item dropdown-toggle" href="/analytics">
-                                                                        Analytics
-                                                                    </a> 
-                                                                </li>
-                                                                <li class="dropdown dropdown-full-color dropdown-light">
-                                                                    <a class="dropdown-item dropdown-toggle" href="/devops">
-                                                                        DevOps
-                                                                    </a> 
-                                                                </li>
-                                                                <li class="dropdown dropdown-full-color dropdown-light">
-                                                                    <a class="dropdown-item dropdown-toggle" href="/general">
-                                                                        General
-                                                                    </a> 
-                                                                </li>
+
+                                                                @foreach($categories as $category)
+
+                                                                    <li class="dropdown dropdown-full-color dropdown-light dropdown-mega">
+                                                                        <a class="dropdown-item dropdown-toggle" href="/{{$category->id}}/{{$category->name}}">
+                                                                            {{ $category->name }}
+                                                                        </a> 
+                                                                    </li>
+
+                                                                @endforeach
+
+                                                                
                                                             </ul>
                                                         </nav>
                                                     </div>

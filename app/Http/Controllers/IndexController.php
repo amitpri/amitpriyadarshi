@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
 
 use App\Picture;
+use App\Category;
 use App\Blog;
 use Illuminate\Http\Request;
 
@@ -12,6 +13,8 @@ class IndexController extends Controller
 {
     public function index()
     {
+
+        $categories = Category::get(['id', 'name', ]);
  
 
          $blogs =  DB::select("SELECT  a.`id`, a.`name`, a.`summary`, a.`user_id`  , b.`name` as author , a.`category_id` , c.`name` as category_name 
@@ -19,7 +22,7 @@ class IndexController extends Controller
                                         WHERE  a.`user_id` = b.`id`
                                         AND a.`category_id` = c.`id` ");
 
-        return view('welcome',compact('blogs'));
+        return view('welcome',compact('categories','blogs'));
 
 
     }
