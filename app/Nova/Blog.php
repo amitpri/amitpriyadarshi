@@ -62,7 +62,17 @@ class Blog extends Resource
 
             AdvancedImage::make('Image2')->disk('public')->croppable(4/3)->resize(400, 300),
 
-            Select::make('Top', 'top')->options([
+            Select::make('Top 1', 'top')->options([
+                        '0' => 'No', 
+                        '1' => 'Yes',
+            ])->displayUsingLabels(), 
+
+            Select::make('Top 2', 'top2')->options([
+                        '0' => 'No', 
+                        '1' => 'Yes',
+            ])->displayUsingLabels(), 
+
+            Select::make('Popular', 'popular')->options([
                         '0' => 'No', 
                         '1' => 'Yes',
             ])->displayUsingLabels(), 
