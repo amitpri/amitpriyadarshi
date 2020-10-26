@@ -368,25 +368,29 @@
 
                                    @foreach($cloud_blogs as $cloud_blog)
 
-                                        <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
-                                            <div class="row align-items-center pb-1">
-                                                <div class="col-sm-4">
-                                                    <a href="blog-post.html">
-                                                        <img src="img/blog/default/blog-47.jpg" class="img-fluid border-radius-0" alt="Gadgets That Make Your Smartphone Even Smarter">
-                                                    </a>
-                                                </div>
-                                                <div class="col-sm-8 pl-sm-0">
-                                                    <div class="thumb-info-caption-text">
-                                                        <div class="d-inline-block text-default text-1 float-none">
-                                                            <a href="/c/{{ $cloud_blog->category_id}}" class="text-decoration-none text-color-default">{{ $cloud_blog->category_name}}</a>
+                                        @if (($cloud_blog->top2) === 0)
+
+                                            <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                                <div class="row align-items-center pb-1">
+                                                    <div class="col-sm-4">
+                                                        <a href="blog-post.html">
+                                                            <img src="img/blog/default/blog-47.jpg" class="img-fluid border-radius-0" alt="Gadgets That Make Your Smartphone Even Smarter">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-sm-8 pl-sm-0">
+                                                        <div class="thumb-info-caption-text">
+                                                            <div class="d-inline-block text-default text-1 float-none">
+                                                                <a href="/c/{{ $cloud_blog->category_id}}" class="text-decoration-none text-color-default">{{ $cloud_blog->category_name}}</a>
+                                                            </div>
+                                                            <h4 class="d-block pb-2 line-height-2 text-3 text-dark font-weight-bold mb-0">
+                                                                <a href="/show?id={{ $cloud_blog->id}}&name={{ $cloud_blog->name}}" class="text-decoration-none text-color-dark">{{ $cloud_blog->name}}</a>
+                                                            </h4>
                                                         </div>
-                                                        <h4 class="d-block pb-2 line-height-2 text-3 text-dark font-weight-bold mb-0">
-                                                            <a href="/show?id={{ $cloud_blog->id}}&name={{ $cloud_blog->name}}" class="text-decoration-none text-color-dark">{{ $cloud_blog->name}}</a>
-                                                        </h4>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </article> 
+                                            </article> 
+
+                                        @endif
 
                                     @endforeach
                                 </div>
@@ -434,25 +438,29 @@
 
                                      @foreach($dwh_blogs as $dwh_blog)
 
-                                        <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
-                                            <div class="row align-items-center pb-1">
-                                                <div class="col-sm-4">
-                                                    <a href="blog-post.html">
-                                                        <img src="img/blog/default/blog-47.jpg" class="img-fluid border-radius-0" alt="Gadgets That Make Your Smartphone Even Smarter">
-                                                    </a>
-                                                </div>
-                                                <div class="col-sm-8 pl-sm-0">
-                                                    <div class="thumb-info-caption-text">
-                                                        <div class="d-inline-block text-default text-1 float-none">
-                                                            <a href="/c/{{ $dwh_blog->category_id}}" class="text-decoration-none text-color-default">{{ $dwh_blog->category_name}}</a>
+                                        @if (($dwh_blog->top2) === 0)
+
+                                            <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
+                                                <div class="row align-items-center pb-1">
+                                                    <div class="col-sm-4">
+                                                        <a href="blog-post.html">
+                                                            <img src="img/blog/default/blog-47.jpg" class="img-fluid border-radius-0" alt="Gadgets That Make Your Smartphone Even Smarter">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-sm-8 pl-sm-0">
+                                                        <div class="thumb-info-caption-text">
+                                                            <div class="d-inline-block text-default text-1 float-none">
+                                                                <a href="/c/{{ $dwh_blog->category_id}}" class="text-decoration-none text-color-default">{{ $dwh_blog->category_name}}</a>
+                                                            </div>
+                                                            <h4 class="d-block pb-2 line-height-2 text-3 text-dark font-weight-bold mb-0">
+                                                                <a href="/show?id={{ $dwh_blog->id}}&name={{ $dwh_blog->name}}" class="text-decoration-none text-color-dark">{{ $dwh_blog->name}}</a>
+                                                            </h4>
                                                         </div>
-                                                        <h4 class="d-block pb-2 line-height-2 text-3 text-dark font-weight-bold mb-0">
-                                                            <a href="/show?id={{ $dwh_blog->id}}&name={{ $dwh_blog->name}}" class="text-decoration-none text-color-dark">{{ $dwh_blog->name}}</a>
-                                                        </h4>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </article> 
+                                            </article> 
+
+                                        @endif
 
                                     @endforeach
  
