@@ -72,6 +72,11 @@ class Blog extends Resource
                         '1' => 'Yes',
             ])->displayUsingLabels()->sortable(), 
 
+            Select::make('Top 3', 'top3')->options([
+                        '0' => 'No', 
+                        '1' => 'Yes',
+            ])->displayUsingLabels()->sortable(), 
+
             Select::make('Popular', 'popular')->options([
                         '0' => 'No', 
                         '1' => 'Yes',

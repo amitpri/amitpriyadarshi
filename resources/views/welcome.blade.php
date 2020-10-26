@@ -224,7 +224,7 @@
 
                             @foreach($blogs_top as $blog)
 
-                                @if (($blog->top) === 1)
+                                @if (($blog->top2) === 1)
 
                                     <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
                                         <div class="row align-items-center pb-1">
@@ -264,7 +264,7 @@
 
                                  @foreach($bigdata_blogs_top as $bigdata_blog_top)
 
-                                    @if (($bigdata_blog_top->top2) === 1)
+                                    @if (($bigdata_blog_top->top3) === 1)
 
                                         <div class="col-lg-6 mb-4 pb-1">
                                             <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-2 mb-2">
@@ -300,7 +300,7 @@
 
                                     @foreach($bigdata_blogs as $bigdata_blog)
 
-                                        @if (($bigdata_blog->top2) === 0)
+                                        @if (($bigdata_blog->top3) === 0)
 
                                             <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
                                                 <div class="row align-items-center pb-1">
@@ -338,7 +338,7 @@
 
                                  @foreach($cloud_blogs_top as $cloud_blog_top)
 
-                                    @if (($cloud_blog_top->top2) === 1)
+                                    @if (($cloud_blog_top->top3) === 1)
 
                                         <div class="col-lg-6 mb-4 pb-1">
                                             <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-2 mb-2">
@@ -372,7 +372,7 @@
 
                                    @foreach($cloud_blogs as $cloud_blog)
 
-                                        @if (($cloud_blog->top2) === 0)
+                                        @if (($cloud_blog->top3) === 0)
 
                                             <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
                                                 <div class="row align-items-center pb-1">
@@ -408,7 +408,7 @@
 
                                  @foreach($dwh_blogs_top as $dwh_blog_top)
 
-                                    @if (($dwh_blog_top->top2) === 1)
+                                    @if (($dwh_blog_top->top3) === 1)
 
                                         <div class="col-lg-6 mb-4 pb-1">
                                             <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-2 mb-2">
@@ -442,7 +442,7 @@
 
                                      @foreach($dwh_blogs as $dwh_blog)
 
-                                        @if (($dwh_blog->top2) === 0)
+                                        @if (($dwh_blog->top3) === 0)
 
                                             <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-4 mb-2">
                                                 <div class="row align-items-center pb-1">
