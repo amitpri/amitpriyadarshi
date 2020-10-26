@@ -18,7 +18,7 @@ class IndexController extends Controller
  
 
          $blogs =  DB::select("SELECT  a.`id`, a.`name`, a.`summary`, a.`user_id`  , b.`name` as author 
-                                        , a.`category_id` , c.`name` as category_name , a.`top` 
+                                        , a.`category_id` , c.`name` as category_name , a.`top` , a.`top2` , a.`featured` , a.`popular` 
                                        FROM `blogs` a , `users` b,  `categories` c
                                         WHERE  a.`user_id` = b.`id`
                                         AND a.`category_id` = c.`id` ");
@@ -30,7 +30,7 @@ class IndexController extends Controller
         $blogs_popular = $blogs;
 
 
-         $bigdata_blogs =  DB::select("SELECT  a.`id`, a.`name`, a.`summary`, a.`user_id`  , b.`name` as author , a.`category_id` , c.`name` as category_name , a.`top` 
+         $bigdata_blogs =  DB::select("SELECT  a.`id`, a.`name`, a.`summary`, a.`user_id`  , b.`name` as author , a.`category_id` , c.`name` as category_name , a.`top` , a.`top2` , a.`featured` , a.`popular`  
                                        FROM `blogs` a , `users` b,  `categories` c
                                         WHERE  a.`user_id` = b.`id`
                                         AND a.`category_id` = c.`id`
@@ -39,7 +39,7 @@ class IndexController extends Controller
 
         $bigdata_blogs_top = $bigdata_blogs;
 
-         $cloud_blogs =  DB::select("SELECT  a.`id`, a.`name`, a.`summary`, a.`user_id`  , b.`name` as author , a.`category_id` , c.`name` as category_name , a.`top` 
+         $cloud_blogs =  DB::select("SELECT  a.`id`, a.`name`, a.`summary`, a.`user_id`  , b.`name` as author , a.`category_id` , c.`name` as category_name , a.`top`  , a.`top2` , a.`featured` , a.`popular` 
                                        FROM `blogs` a , `users` b,  `categories` c
                                         WHERE  a.`user_id` = b.`id`
                                         AND a.`category_id` = c.`id`
@@ -47,7 +47,7 @@ class IndexController extends Controller
 
         $cloud_blogs_top = $cloud_blogs;
 
-         $dwh_blogs =  DB::select("SELECT  a.`id`, a.`name`, a.`summary`, a.`user_id`  , b.`name` as author , a.`category_id` , c.`name` as category_name, a.`top`  
+         $dwh_blogs =  DB::select("SELECT  a.`id`, a.`name`, a.`summary`, a.`user_id`  , b.`name` as author , a.`category_id` , c.`name` as category_name, a.`top`   , a.`top2` , a.`featured` , a.`popular` 
                                        FROM `blogs` a , `users` b,  `categories` c
                                         WHERE  a.`user_id` = b.`id`
                                         AND a.`category_id` = c.`id`

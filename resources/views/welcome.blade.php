@@ -260,7 +260,7 @@
 
                                  @foreach($bigdata_blogs_top as $bigdata_blog_top)
 
-                                    @if (($bigdata_blog_top->top) === 1)
+                                    @if (($bigdata_blog_top->top2) === 1)
 
                                         <div class="col-lg-6 mb-4 pb-1">
                                             <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-2 mb-2">
@@ -330,7 +330,7 @@
 
                                  @foreach($cloud_blogs_top as $cloud_blog_top)
 
-                                    @if (($cloud_blog_top->top) === 1)
+                                    @if (($cloud_blog_top->top2) === 1)
 
                                         <div class="col-lg-6 mb-4 pb-1">
                                             <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-2 mb-2">
@@ -396,7 +396,7 @@
 
                                  @foreach($dwh_blogs_top as $dwh_blog_top)
 
-                                    @if (($dwh_blog_top->top) === 1)
+                                    @if (($dwh_blog_top->top2) === 1)
 
                                         <div class="col-lg-6 mb-4 pb-1">
                                             <article class="thumb-info thumb-info-side-image thumb-info-no-zoom bg-transparent border-radius-0 pb-2 mb-2">
