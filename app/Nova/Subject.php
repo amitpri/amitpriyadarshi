@@ -2,22 +2,24 @@
 
 namespace App\Nova;
 
-
+use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
-use Illuminate\Http\Request; 
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Select;
-
-use Laravel\Nova\Fields\HasMany;
-
-use Laravel\Nova\Fields\Textarea;
-use Laravel\Nova\Fields\Image;
+use Laravel\Nova\Fields\BelongsTo;
+use Laravel\Nova\Fields\BelongsToMany;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
-class Category extends Resource
+class Subject extends Resource
 {
+    /**
+     * The model the resource corresponds to.
+     *
+     * @var string
+     */
     public static $group = '0.Blog'; 
-    public static $model = \App\Category::class;
+
+    public static $model = \App\Subject::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
@@ -32,7 +34,7 @@ class Category extends Resource
      * @var array
      */
     public static $search = [
-        'id', 'name' , 'projects' , 'students' , 'details' , 'image'
+        'category', 'name'
     ];
 
     /**
@@ -46,20 +48,23 @@ class Category extends Resource
         return [
             ID::make()->sortable(),
 
+            BelongsTo::make('Category', 'category', 'App\Nova\Category')->sortable(),
+
             Text::make('Name')->sortable(),
 
-            Textarea::make('Details')->rows(3)->alwaysShow(),
-             
-            Image::make('Image'),
+            Select::make('Top', 'top')->options([
+                        '0' => 'No',
+                        '1' => 'Yes',
+            ])->sortable(),   
 
-            Select::make('Approved')->options([
+            Select::make('Active', 'status')->options([
                         '0' => 'No',
                         '1' => 'Yes',
             ])->sortable(),
+
+     
+            BelongsToMany::make('Blog'),
  
-            HasMany::make('Subject'),
-            
-            HasMany::make('Blog'),
         ];
     }
 

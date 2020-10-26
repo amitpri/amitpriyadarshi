@@ -9,6 +9,7 @@ use Laravel\Nova\NovaApplicationServiceProvider;
 
 use App\Nova\Blog;
 use App\Nova\Category;
+use App\Nova\Subject;
 use App\Nova\Plan;
 use App\Nova\Execution;
 use App\Nova\Note;
@@ -32,6 +33,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
 
             Blog::class,
             Category::class,
+            Subject::class,
             Plan::class,
             Execution::class,
             Interview::class,
