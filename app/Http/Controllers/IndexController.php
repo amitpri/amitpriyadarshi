@@ -49,6 +49,16 @@ class IndexController extends Controller
         return view('blog',compact('blog', 'projects' , 'subjects' , 'username'));
     }
 
+    public function category($blogid, $blogcategory)
+    {
+        
+        $blogid = $blogid;
+
+        $blogs = Blog::where('id',$blogid)->get(['id', 'user_id', 'category_id', 'name', 'blog', 'tags', 'image1', 'image2']);
+
+        return view('blogs',compact('blogs'));
+    }
+
     public function profile()
     {
 

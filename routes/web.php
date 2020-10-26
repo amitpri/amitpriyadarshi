@@ -15,6 +15,8 @@
 Route::get('/', 'IndexController@index');
 Route::get('/show', 'IndexController@show'); 
 
+Route::get('/{blogid}/{blogcategory}', 'IndexController@category'); 
+
 
 Auth::routes([
   'register' => false, // Registration Routes...
