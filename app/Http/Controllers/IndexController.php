@@ -49,6 +49,8 @@ class IndexController extends Controller
     public function show(Request $request)
     {
         
+        $categories = Category::get(['id', 'name', ]);
+
         $bid = $request->id;
 
         $blog = Blog::where('id',$bid)->first(['id', 'user_id', 'category_id', 'name', 'blog', 'tags', 'image1', 'image2']);
@@ -71,6 +73,8 @@ class IndexController extends Controller
     public function category($blogid, $blogcategory)
     {
         
+        $categories = Category::get(['id', 'name', ]);
+
         $blogid = $blogid;
 
         $blogs = Blog::where('category_id',$blogid)->get(['id', 'user_id', 'category_id', 'name', 'blog', 'tags', 'image1', 'image2']);
