@@ -306,10 +306,10 @@
                                             <div class="col-sm-8 pl-sm-0">
                                                 <div class="thumb-info-caption-text">
                                                     <div class="d-inline-block text-default text-1 float-none">
-                                                        <a href="blog-post.html" class="text-decoration-none text-color-default">January 12, 2019</a>
+                                                        <a href="/c/{{$category->id}}/{{$category->name}}" class="text-decoration-none text-color-default">{{$bigdata_blog->category_name}}</a>
                                                     </div>
                                                     <h4 class="d-block pb-2 line-height-2 text-3 text-dark font-weight-bold mb-0">
-                                                        <a href="blog-post.html" class="text-decoration-none text-color-dark">Gadgets That Make Your Smartphone Even Smarter</a>
+                                                        <a href="/show?id={{ $bigdata_blog->id}}&name={{ $bigdata_blog->name}}" class="text-decoration-none text-color-dark">{{$bigdata_blog->name}}</a>
                                                     </h4>
                                                 </div>
                                             </div>
