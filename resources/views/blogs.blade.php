@@ -142,7 +142,7 @@
                                                         <nav class="collapse">
                                                             <ul class="nav nav-pills" id="mainNav">
                                                                 <li class="dropdown dropdown-full-color dropdown-light">
-                                                                    <a class="dropdown-item dropdown-toggle" href="index.html">
+                                                                    <a class="dropdown-item dropdown-toggle" href="/">
                                                                         Home
                                                                     </a> 
                                                                 </li>
