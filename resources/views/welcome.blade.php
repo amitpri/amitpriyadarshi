@@ -76,23 +76,23 @@
                                     <div class="header-row">
                                         <nav class="header-nav-top">
                                             <ul class="nav nav-pills">
-                                                <li class="nav-item nav-item-anim-icon d-none d-md-block">
+                                                <li class="nav-item nav-item-left-border nav-item-left-border-remove nav-item-left-border-sm-show">
                                                     <a class="nav-link pl-0" href="/about"><i class="fas fa-angle-right"></i> About Amit</a>
                                                 </li>
-                                                <li class="nav-item nav-item-anim-icon d-none d-md-block">
+                                                <li class="nav-item nav-item-left-border nav-item-left-border-remove nav-item-left-border-sm-show">
                                                     <a class="nav-link" href="/contact"><i class="fas fa-angle-right"></i> Contact Amit</a>
                                                 </li>
 
                                                 </li>
-                                                <li class="nav-item nav-item-anim-icon d-none d-md-block">
+                                                <li class="nav-item nav-item-left-border nav-item-left-border-remove nav-item-left-border-sm-show">
                                                     <a class="nav-link" href="/consulting"><i class="fas fa-angle-right"></i> Consulting</a>
                                                 </li>
 
-                                                <li class="nav-item nav-item-anim-icon d-none d-md-block">
+                                                <li class="nav-item nav-item-left-border nav-item-left-border-remove nav-item-left-border-sm-show">
                                                     <a class="nav-link" href="/services"><i class="fas fa-angle-right"></i> Services</a>
                                                 </li>
 
-                                                <li class="nav-item nav-item-anim-icon d-none d-md-block">
+                                                <li class="nav-item nav-item-left-border nav-item-left-border-remove nav-item-left-border-sm-show">
                                                     <a class="nav-link" href="/training"><i class="fas fa-angle-right"></i> Training</a>
                                                 </li>
                                              
