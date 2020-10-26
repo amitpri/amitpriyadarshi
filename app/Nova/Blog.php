@@ -56,7 +56,7 @@ class Blog extends Resource
 
             Trix::make('Blog')->alwaysShow(),
 
-            Text::make('Tag' ,'tags')->sortable(), 
+            Text::make('Tag' ,'tags')->hideFromIndex(),
 
             AdvancedImage::make('Image1')->disk('public')->croppable(4/3)->resize(400, 300),
 
