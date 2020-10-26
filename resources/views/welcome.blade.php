@@ -150,7 +150,7 @@
                                                                 @foreach($categories as $category)
 
                                                                     <li class="dropdown dropdown-full-color dropdown-light dropdown-mega">
-                                                                        <a class="dropdown-item dropdown-toggle" href="/{{$category->id}}/{{$category->name}}">
+                                                                        <a class="dropdown-item dropdown-toggle" href="/c/{{$category->id}}/{{$category->name}}">
                                                                             {{ $category->name }}
                                                                         </a> 
                                                                     </li>
@@ -246,7 +246,7 @@
                         <div class="col-md-9">
 
                             <div class="heading heading-border heading-middle-border">
-                                <h3 class="text-4"><strong class="font-weight-bold text-1 px-3 text-light py-2 bg-secondary">Gadgets</strong></h3>
+                                <h3 class="text-4"><strong class="font-weight-bold text-1 px-3 text-light py-2 bg-secondary">Big Data</strong></h3>
                             </div>
 
                             <div class="row pb-1">
@@ -339,7 +339,7 @@
                             </div>
 
                             <div class="heading heading-border heading-middle-border">
-                                <h3 class="text-4"><strong class="font-weight-bold text-1 px-3 text-light py-2 bg-tertiary">Lifestyle</strong></h3>
+                                <h3 class="text-4"><strong class="font-weight-bold text-1 px-3 text-light py-2 bg-tertiary">Cloud</strong></h3>
                             </div>
 
                             <div class="row pb-1">
@@ -432,7 +432,7 @@
                             </div>
 
                             <div class="heading heading-border heading-middle-border">
-                                <h3 class="text-4"><strong class="font-weight-bold text-1 px-3 text-light py-2 bg-quaternary">Travel</strong></h3>
+                                <h3 class="text-4"><strong class="font-weight-bold text-1 px-3 text-light py-2 bg-quaternary">DWH</strong></h3>
                             </div>
 
                             <div class="row pb-1">

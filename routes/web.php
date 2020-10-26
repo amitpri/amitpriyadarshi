@@ -15,7 +15,7 @@
 Route::get('/', 'IndexController@index');
 Route::get('/show', 'IndexController@show'); 
 
-Route::get('/{blogid}/{blogcategory}', 'IndexController@category'); 
+Route::get('/c/{blogid}/{blogcategory}', 'IndexController@category'); 
 
 
 Auth::routes([
