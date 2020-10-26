@@ -46,7 +46,7 @@ class Blog extends Resource
         return [
             ID::make()->sortable(),
 
-            BelongsTo::make('User', 'user', 'App\Nova\User')->sortable(),
+            BelongsTo::make('User', 'user', 'App\Nova\User')->hideFromIndex(),
 
             BelongsTo::make('Category', 'category', 'App\Nova\Category')->sortable(),
  
