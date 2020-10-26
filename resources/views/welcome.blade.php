@@ -455,12 +455,7 @@
                                 </div>
                             </div>
 
-                            <div class="text-center py-3 mb-4">
-                                <a href="http://themeforest.net/item/porto-responsive-html5-template/4106987" target="_blank" class="d-block">
-                                    <img alt="Porto" class="img-fluid pl-3" src="img/blog/blog-ad-3.jpg" />
-                                </a>
-                            </div>
-
+                          
                             <div class="row pb-1 pt-3">
                                 <div class="col-md-6">
 
@@ -753,52 +748,9 @@
                                 </div>
                             </div>
 
-                            <aside class="sidebar pb-4">
-                                <h5 class="font-weight-bold">Latest from Twitter</h5>
-                                <div id="tweet" class="twitter mb-4" data-plugin-tweets data-plugin-options="{'username': 'oklerthemes', 'count': 2}">
-                                    <p>Please wait...</p>
-                                </div>
-                                <h5 class="font-weight-bold pt-4">Photos from Instagram</h5>
-                                <div id="instafeedNoMargins" class="mb-4 pb-1"></div>
-                                <h5 class="font-weight-bold pt-4 mb-2">Tags</h5>
-                                <div class="mb-3 pb-1">
-                                    <a href="#"><span class="badge badge-dark badge-sm badge-pill text-uppercase px-2 py-1 mr-1">design</span></a>
-                                    <a href="#"><span class="badge badge-dark badge-sm badge-pill text-uppercase px-2 py-1 mr-1">brands</span></a>
-                                    <a href="#"><span class="badge badge-dark badge-sm badge-pill text-uppercase px-2 py-1 mr-1">video</span></a>
-                                    <a href="#"><span class="badge badge-dark badge-sm badge-pill text-uppercase px-2 py-1 mr-1">business</span></a>
-                                    <a href="#"><span class="badge badge-dark badge-sm badge-pill text-uppercase px-2 py-1 mr-1">travel</span></a>
-                                </div>
-                                <a href="http://themeforest.net/item/porto-responsive-html5-template/4106987" target="_blank" class="my-4 pt-3 d-block">
-                                    <img alt="Porto" class="img-fluid" src="img/blog/blog-ad-1-medium.jpg" />
-                                </a>
-                                <h5 class="font-weight-bold pt-4">Find us on Facebook</h5>
-                                <div class="fb-page" data-href="https://www.facebook.com/OklerThemes/" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/OklerThemes/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/OklerThemes/">Okler Themes</a></blockquote></div>
-                            </aside>
+           
 
-                            <h5 class="font-weight-bold pt-1">Recent Comments</h5>
-
-                            <ul class="list-unstyled mb-4 pb-1 pt-2">
-
-                                <li class="pb-3 text-2">
-                                    <a href="#" rel="external nofollow" class="font-weight-bold text-dark">John Doe</a> on <a href="blog-post.html" class="text-dark">Main Reasons To Stop Texting And Driving</a>
-                                </li>
-
-                                <li class="pb-3 text-2">
-                                    <a href="#" rel="external nofollow" class="font-weight-bold text-dark">John Doe</a> on <a href="blog-post.html" class="text-dark">Tips to Help You Quickly Prepare your Lunch</a>
-                                </li>
-
-                                <li class="pb-3 text-2">
-                                    <a href="#" rel="external nofollow" class="font-weight-bold text-dark">John Doe</a> on <a href="blog-post.html" class="text-dark">Why should I buy a smartwatch?</a>
-                                </li>
-
-                                <li class="pb-3 text-2">
-                                    <a href="#" rel="external nofollow" class="font-weight-bold text-dark">John Doe</a> on <a href="blog-post.html" class="text-dark">The best augmented reality smartglasses</a>
-                                </li>
-
-                                <li class="pb-3 text-2">
-                                    <a href="#" rel="external nofollow" class="font-weight-bold text-dark">John Doe</a> on <a href="blog-post.html" class="text-dark">12 Healthiest Foods to Eat for Breakfast</a>
-                                </li>
-                            </ul>
+                      
 
                         </div>
 
