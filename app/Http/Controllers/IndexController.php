@@ -67,7 +67,7 @@ class IndexController extends Controller
 
    //     $username = User::where('id', $userid)->first(['name'])->name;
 
-        return view('blog',compact('blog', 'projects' , 'subjects' , 'username'));
+        return view('blog',compact('categories','blog', 'projects' , 'subjects' , 'username'));
     }
 
     public function category($blogid, $blogcategory)
@@ -79,7 +79,7 @@ class IndexController extends Controller
 
         $blogs = Blog::where('category_id',$blogid)->get(['id', 'user_id', 'category_id', 'name', 'blog', 'tags', 'image1', 'image2']);
 
-        return view('blogs',compact('blogs'));
+        return view('categories','blogs',compact('blogs'));
     }
 
     public function profile()
