@@ -11,10 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
  
+Route::get('/', 'IndexController@index');
+Route::get('/show', 'IndexController@show'); 
+
+
 Auth::routes([
   'register' => false, // Registration Routes...
   'reset' => false, // Password Reset Routes...
