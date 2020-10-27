@@ -92,6 +92,10 @@ class Blog extends Resource
                         '1' => 'Yes',
             ])->displayUsingLabels()->sortable(), 
 
+
+            Trix::make('Notes')->alwaysShow(),
+ 
+
    //         BelongsToMany::make('Subject'),
 
    //         BelongsToMany::make('Project'),
