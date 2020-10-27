@@ -230,7 +230,7 @@
                                         <div class="row align-items-center pb-1">
                                             <div class="col-sm-5">
                                                 <a href="blog-post.html">
-                                                    <img src="img/blog/default/blog-55.jpg" class="img-fluid border-radius-0" alt="Simple Ways to Have a Pretty Face">
+                                                    <img src="/storage/{{$blog->image1}}" class="img-fluid border-radius-0" alt="Simple Ways to Have a Pretty Face">
                                                 </a>
                                             </div>
                                             <div class="col-sm-7 pl-sm-1">
