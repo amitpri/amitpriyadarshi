@@ -203,7 +203,7 @@
                                     <a href="/show?id={{ $blog_top->id}}&name={{ $blog_top->name}}">
                                         <article class="thumb-info thumb-info-no-borders thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-show-more thumb-info-no-zoom border-radius-0">
                                             <div class="thumb-info-wrapper thumb-info-wrapper-opacity-6">
-                                                <img src="img/blog/default/blog-46.jpg" class="img-fluid" alt="How To Take Better Concert Pictures in 30 Seconds">
+                                                <img src="/storage/{{$blog->image1}}" class="img-fluid" alt="How To Take Better Concert Pictures in 30 Seconds">
                                                 <div class="thumb-info-title bg-transparent p-4">
                                                     <div class="thumb-info-type bg-color-dark px-2 mb-1">{{$blog_top->category_name}}</div>
                                                     <div class="thumb-info-inner mt-1">
@@ -230,7 +230,7 @@
                                         <div class="row align-items-center pb-1">
                                             <div class="col-sm-5">
                                                 <a href="blog-post.html">
-                                                    <img src="/storage/{{$blog->image1}}" class="img-fluid border-radius-0" alt="Simple Ways to Have a Pretty Face">
+                                                    <img src="/storage/{{$blog->image1}}" class="img-fluid border-radius-0" >
                                                 </a>
                                             </div>
                                             <div class="col-sm-7 pl-sm-1">
@@ -271,7 +271,7 @@
                                                 <div class="row">
                                                     <div class="col">
                                                         <a href="blog-post.html">
-                                                            <img src="img/blog/default/blog-67.jpg" class="img-fluid border-radius-0" alt="Why should I buy a smartwatch?">
+                                                            <img src="/storage/{{$blog->image1}}" class="img-fluid border-radius-0" alt="Why should I buy a smartwatch?">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -306,7 +306,7 @@
                                                 <div class="row align-items-center pb-1">
                                                     <div class="col-sm-4">
                                                         <a href="blog-post.html">
-                                                            <img src="img/blog/default/blog-47.jpg" class="img-fluid border-radius-0" alt="Gadgets That Make Your Smartphone Even Smarter">
+                                                            <img src="/storage/{{$blog->image1}}" class="img-fluid border-radius-0" alt="Gadgets That Make Your Smartphone Even Smarter">
                                                         </a>
                                                     </div>
                                                     <div class="col-sm-8 pl-sm-0">
@@ -345,7 +345,7 @@
                                                 <div class="row">
                                                     <div class="col">
                                                         <a href="blog-post.html">
-                                                            <img src="img/blog/default/blog-67.jpg" class="img-fluid border-radius-0" alt="Why should I buy a smartwatch?">
+                                                            <img src="/storage/{{$blog->image1}}" class="img-fluid border-radius-0" alt="Why should I buy a smartwatch?">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -378,7 +378,7 @@
                                                 <div class="row align-items-center pb-1">
                                                     <div class="col-sm-4">
                                                         <a href="blog-post.html">
-                                                            <img src="img/blog/default/blog-47.jpg" class="img-fluid border-radius-0" alt="Gadgets That Make Your Smartphone Even Smarter">
+                                                            <img src="/storage/{{$blog->image1}}" class="img-fluid border-radius-0" alt="Gadgets That Make Your Smartphone Even Smarter">
                                                         </a>
                                                     </div>
                                                     <div class="col-sm-8 pl-sm-0">
@@ -415,7 +415,7 @@
                                                 <div class="row">
                                                     <div class="col">
                                                         <a href="blog-post.html">
-                                                            <img src="img/blog/default/blog-67.jpg" class="img-fluid border-radius-0" alt="Why should I buy a smartwatch?">
+                                                            <img src="/storage/{{$blog->image1}}" class="img-fluid border-radius-0" alt="Why should I buy a smartwatch?">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -448,7 +448,7 @@
                                                 <div class="row align-items-center pb-1">
                                                     <div class="col-sm-4">
                                                         <a href="blog-post.html">
-                                                            <img src="img/blog/default/blog-47.jpg" class="img-fluid border-radius-0" alt="Gadgets That Make Your Smartphone Even Smarter">
+                                                            <img src="/storage/{{$blog->image1}}" class="img-fluid border-radius-0" alt="Gadgets That Make Your Smartphone Even Smarter">
                                                         </a>
                                                     </div>
                                                     <div class="col-sm-8 pl-sm-0">
@@ -486,7 +486,7 @@
                                                     <div class="post-image">
                                                         <div class="img-thumbnail img-thumbnail-no-borders d-block">
                                                             <a href="blog-post.html">
-                                                                <img src="img/blog/square/blog-55.jpg" class="border-radius-0" width="50" height="50" alt="Simple Ways to Have a Pretty Face">
+                                                                <img src="/storage/{{$blog->image1}}" class="border-radius-0" width="50" height="50" alt="Simple Ways to Have a Pretty Face">
                                                             </a>
                                                         </div>
                                                     </div>
@@ -516,7 +516,7 @@
                                                 <div class="post-image">
                                                     <div class="img-thumbnail img-thumbnail-no-borders d-block">
                                                         <a href="blog-post.html">
-                                                            <img src="img/blog/square/blog-67.jpg" class="border-radius-0" width="50" height="50" alt="Why should I buy a smartwatch?">
+                                                            <img src="/storage/{{$blog->image1}}" class="border-radius-0" width="50" height="50" alt="Why should I buy a smartwatch?">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -551,7 +551,7 @@
                                             <div class="row">
                                                 <div class="col">
                                                     <a href="blog-post.html">
-                                                        <img src="img/blog/default/blog-65.jpg" class="img-fluid border-radius-0" alt="Main Reasons To Stop Texting And Driving">
+                                                        <img src="/storage/{{$blog->image1}}" class="img-fluid border-radius-0" alt="Main Reasons To Stop Texting And Driving">
                                                     </a>
                                                 </div>
                                             </div>
