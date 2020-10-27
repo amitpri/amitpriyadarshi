@@ -58,9 +58,9 @@ class Blog extends Resource
 
             Text::make('Tag' ,'tags')->hideFromIndex(),
 
-            AdvancedImage::make('Image1')->disk('public')->croppable(4/3)->resize(400, 300),
+            AdvancedImage::make('Image1')->disk('public')->croppable(4/3)->resize(400, 300)->hideFromIndex(),
 
-            AdvancedImage::make('Image2')->disk('public')->croppable(4/3)->resize(400, 300),
+            AdvancedImage::make('Image2')->disk('public')->croppable(4/3)->resize(400, 300)->hideFromIndex(),
 
             Select::make('Top 1', 'top')->options([
                         '0' => 'No', 
