@@ -22,6 +22,7 @@ use App\Nova\Picture;
 use App\Nova\Lead; 
 use App\Nova\User;
 use App\Nova\Interview; 
+use App\Nova\Analytics; 
 use App\Nova\Document; 
 
 class NovaServiceProvider extends NovaApplicationServiceProvider
@@ -37,6 +38,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
             Plan::class,
             Execution::class,
             Interview::class,
+            Analytics::class,
             Document::class,
             Note::class,
             MBA::class,
