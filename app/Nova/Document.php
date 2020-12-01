@@ -17,7 +17,7 @@ class Document extends Resource
 
     public static function label() {
 
-        return '4.Documents';
+        return '5.Documents';
 
     }
     public static $model = 'App\Document';

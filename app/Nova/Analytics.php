@@ -17,7 +17,7 @@ class Analytics extends Resource
 
     public static function label() {
 
-        return '5.Analytics';
+        return '4.Analytics';
 
     }
 
